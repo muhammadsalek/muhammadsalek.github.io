@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Salek Miah | Data Scientist & Researcher</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #2C3E50; /* Dark blue for professionalism */
+            --secondary: #3498DB; /* Lighter blue for accents */
+            --dark: #212121;
+            --light: #F5F5F5;
+            --gray: #757575;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: var(--dark);
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 150px 0 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .hero-content {
+            width: 50%;
+        }
+        
+        .hero-img {
+            width: 40%;
+        }
+        
+        .hero-img img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: var(--gray);
+            margin-bottom: 30px;
+        }
+        
+        .hero .highlight {
+            color: var(--primary);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: var(--secondary);
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .about-img {
+            width: 40%;
+        }
+        
+        .about-img img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-text {
+            width: 55%;
+        }
+        
+        .about-text h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--gray);
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .skill-tag {
+            background-color: var(--light);
+            padding: 8px 15px;
+            border-radius: 50px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        /* Projects Section */
+        .projects {
+            padding: 100px 0;
+            background-color: var(--light);
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-gap: 30px;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-img {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        
+        .project-card:hover .project-img img {
+            transform: scale(1.1);
+        }
+        
+        .project-content {
+            padding: 20px;
+        }
+        
+        .project-content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .project-content p {
+            color: var(--gray);
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        
+        .project-tag {
+            background-color: var(--light);
+            padding: 5px 10px;
+            border-radius: 50px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+        
+        .project-link {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        /* Certifications Section */
+        .certifications {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-gap: 30px;
+        }
+        
+        .cert-card {
+            background-color: var(--light);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .cert-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .cert-card p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background-color: var(--light);
+        }
+        
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .contact-info {
+            width: 45%;
+        }
+        
+        .contact-info h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            color: var(--gray);
+            margin-bottom: 30px;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        
+        .contact-text {
+            color: var(--gray);
+        }
+        
+        .social-links {
+            display: flex;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .contact-form {
+            width: 50%;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+        
+        textarea.form-control {
+            height: 150px;
+            resize: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-text {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+        }
+        
+        .copyright {
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        /* Responsive Styles */
+        @media screen and (max-width: 992px) {
+            .hero-content, .hero-img {
+                width: 48%;
+            }
+            .hero h1 {
+                font-size: 40px;
+            }
+            .about-img, .about-text {
+                width: 48%;
+            }
+            .projects-grid, .certifications-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+            }
+            .nav-links.active {
+                left: 0;
+            }
+            .nav-links li {
+                margin: 15px 0;
+            }
+            .hamburger {
+                display: block;
+            }
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-content, .hero-img {
+                width: 100%;
+            }
+            .hero-img {
+                margin-top: 50px;
+            }
+            .about-content {
+                flex-direction: column;
+            }
+            .about-img, .about-text {
+                width: 100%;
+            }
+            .about-img {
+                margin-bottom: 50px;
+            }
+            .projects-grid, .certifications-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-container {
+                flex-direction: column;
+            }
+            .contact-info, .contact-form {
+                width: 100%;
+            }
+            .contact-info {
+                margin-bottom: 50px;
+            }
+            
+            /* Hamburger Menu */
+            .hamburger span {
+                display: block;
+                width: 25px;
+                height: 3px;
+                background-color: var(--dark);
+                margin: 5px 0;
+                transition: all 0.3s ease;
+            }
+            .hamburger.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">MD Salek Miah</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Data Scientist & <span class="highlight">Researcher</span></h1>
+                <p>I'm an aspiring data scientist at Shahjalal University of Science and Technology, specializing in statistical modeling and machine learning to solve real-world problems in public health and environmental sustainability.</p>
+                <a href="#projects" class="btn">Explore My Research</a>
+            </div>
+            <div class="hero-img">
+                <img src="https://via.placeholder.com/600x400" alt="MD Salek Miah - Data Scientist">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://via.placeholder.com/500x600" alt="MD Salek Miah">
+                </div>
+                <div class="about-text">
+                    <h3>MD Salek Miah</h3>
+                    <p>I'm a B.Sc. student in Statistics at Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh. With a passion for data-driven solutions, I've published 5+ research papers and secured a Top 5 position in the Comilla University IT Society Data Hackathon 2024. My work focuses on predictive modeling, survival analysis, and GIS-based environmental studies.</p>
+                    <p>I'm also an active participant in data science competitions like Battle of DS 360 and a member of the SUST Data Science Club, constantly honing my skills in Python, R, and statistical tools.</p>
+                    <div class="skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">SPSS</span>
+                        <span class="skill-tag">Stata</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">GIS</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Statistical Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Research Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x450" alt="Cardiovascular Research">
+                    </div>
+                    <div class="project-content">
+                        <h3>Predictive Modelling of Cardiovascular Diseases</h3>
+                        <p>Presented at ICERIE 2025, SUST. Achieved a C-index of 0.989 using survival analysis techniques.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Statistical Modeling</span>
+                            <span class="project-tag">Survival Analysis</span>
+                            <span class="project-tag">R</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x450" alt="Water Quality Research">
+                    </div>
+                    <div class="project-content">
+                        <h3>Water Quality Analysis of Buriganga River</h3>
+                        <p>Presented at RURS 2025. Utilized GIS and WQI to identify pollution hotspots.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">GIS</span>
+                            <span class="project-tag">Environmental Analysis</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x450" alt="Handwashing Research">
+                    </div>
+                    <div class="project-content">
+                        <h3>Handwashing Behaviour and Child Nutrition</h3>
+                        <p>Ongoing study exploring hygiene impacts on child health outcomes.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Public Health</span>
+                            <span class="project-tag">Statistical Analysis</span>
+                            <span class="project-tag">R</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                <!-- Project 4 (NEW) -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x450" alt="Pesticide Study">
+                    </div>
+                    <div class="project-content">
+                        <h3>Assessing Knowledge, Attitude, and Practices of Local Farmers Regarding Pesticide Use</h3>
+                        <p>Ongoing research examining pesticide usage patterns and environmental impacts under the supervision of Dr. Md Ohid Ullah. Working as data collector with Dr. Zakir Hossain.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Agricultural Research</span>
+                            <span class="project-tag">Environmental Impact</span>
+                            <span class="project-tag">Field Research</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications</h2>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3>Data Analysis with R</h3>
+                    <p>Coursera, Sep-Oct 2024</p>
+                    <p>Mastered statistical analysis using R.</p>
+                </div>
+                <div class="cert-card">
+                    <h3>Google Project Management</h3>
+                    <p>Coursera, Oct 2024 - Present</p>
+                    <p>Learning project planning and execution.</p>
+                </div>
+                <div class="cert-card">
+                    <h3>Data Science and Machine Learning with Python</h3>
+                    <p>Instructory, Jun 2024 - Present</p>
+                    <p>Advanced Python skills for ML applications.</p>
+                </div>
+                <div class="cert-card">
+                    <h3>Fundamentals of Manuscript Preparation</h3>
+                    <p>Elsevier, Jan 2025</p>
+                    <p>Certified in scientific writing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Collaborate</h3>
+                    <p>I'm open to research collaborations, data science projects, or discussions about my work.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">Sylhet, Habiganj, 3310, Bangladesh</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">muhammadsalekmiah@gmail.com</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">+880 1687831074</div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/md-salek-miah-b34309329/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/muhammadsalek" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-text">
+                <p>MD Salek Miah - Data Scientist & Researcher</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 MD Salek Miah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I'll get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>

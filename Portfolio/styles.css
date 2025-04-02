@@ -1,0 +1,84 @@
+/* Add these to your existing styles.css */
+.hero {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.hero-summary {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+.hero-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    text-align: center;
+}
+
+.highlight span {
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.highlight {
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 40px;
+    }
+    .hero-content h2 {
+        font-size: 22px;
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .hero-summary {
+        font-size: 14px;
+    }
+    .hero-highlights {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .highlight span {
+        font-size: 24px;
+    }
+}
