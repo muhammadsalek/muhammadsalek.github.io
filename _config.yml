@@ -3,13 +3,13 @@
 # ==========================
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Md Salek Miah | Statistician & Public Health Researcher"
+title                    : "Md Salek Miah"
 title_separator          : "-"
 name                     : &name "Md Salek Miah"
-description              : &description "Statistician | Epidemiology & Public Health | Machine Learning Specialist | PhD Applicant"
-url                      : "https://muhammadsalek.github.io"   # Update to your actual GitHub Pages URL
+description              : &description "Statistician | Epidemiology & Public Health Researcher | Machine Learning Specialist | PhD Applicant"
+url                      : "https://muhammadsalek.github.io"
 baseurl                  : ""
-repository               : "muhammadsalek/muhammadsalek.github.io"  # Update to your actual repo
+repository               : "muhammadsalek/muhammadsalek.github.io"
 
 # ==========================
 # Site Author
@@ -18,7 +18,7 @@ author:
   avatar           : "profile.png"
   name             : "Md Salek Miah"
   pronouns         : "he/him"
-  bio              : "Statistician & Machine Learning Specialist | Epidemiology & Public Health Researcher | 2+ Published & 20+ Manuscripts Under Review in Q1 Journals | PhD Applicant (MIT, Harvard, Cambridge)"
+  bio              : "Statistician & ML Specialist | Epidemiology & Public Health | 2 Published + 20+ Under Review in Q1 Journals | PhD Applicant"
   location         : "Sylhet, Bangladesh"
   employer         : "Shahjalal University of Science & Technology (SUST)"
   uri              : "https://salek-protfolio.vercel.app/"
@@ -27,7 +27,7 @@ author:
   # Academic websites
   academia         :
   arxiv            :
-  googlescholar    :   # Add your Google Scholar URL if available
+  googlescholar    :
   inspire-hep      :
   impactstory      :
   orcid            : "https://orcid.org/0009-0005-5973-461X"
@@ -119,7 +119,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 :
-og_description           : "Statistician and Machine Learning Specialist specializing in Epidemiology, Public Health, and Spatial Analysis. PhD Applicant."
+og_description           : "Statistician and ML Specialist specializing in Epidemiology, Public Health, and Spatial Analysis. PhD Applicant at MIT, Harvard, Cambridge."
 social:
   type                   : "Person"
   name                   : "Md Salek Miah"
@@ -130,6 +130,7 @@ social:
     - "https://www.researchgate.net/profile/Md-Miah-142"
     - "https://www.kaggle.com/muhammadsalekmiah"
     - "https://salek-protfolio.vercel.app/"
+    - "https://www.webofscience.com/wos/author/record/PII-8481-2026"
 
 # ==========================
 # Analytics
