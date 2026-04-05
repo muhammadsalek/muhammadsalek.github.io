@@ -19,21 +19,21 @@
 
 
 
-<title>Blog Post number 1 - Md Salek Miah</title>
+<title>Machine Learning in Public Health: Why Explainability Matters - Md Salek Miah</title>
 
 
 
-<meta name="description" content="This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.">
+<meta name="description" content="In recent years, machine learning (ML) has transformed how researchers analyze complex health data. From predicting skilled birth attendance to classifying air quality, algorithms like XGBoost and Random Forest now routinely outperform traditional statistical models. But in public health, accuracy alone is not enough — we need to understand why a model makes a prediction.">
 
 
 
 
 
-  <meta property="article:published_time" content="2012-08-14T00:00:00+06:00">
+  <meta property="article:published_time" content="2025-12-01T00:00:00+06:00">
 
 
 
-  <link rel="canonical" href="https://muhammadsalek.github.io/posts/2012/08/blog-post-1/">
+  <link rel="canonical" href="https://muhammadsalek.github.io/posts/2025/12/ml-public-health-explainability/">
 
 
 
@@ -68,15 +68,15 @@
 <!-- Open Graph protocol data (https://ogp.me/), used by social media -->
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Md Salek Miah"> 
-<meta property="og:title" content="Blog Post number 1">
+<meta property="og:title" content="Machine Learning in Public Health: Why Explainability Matters">
 
   <meta property="og:type" content="article">
 
 
-  <meta property="og:description" name="description" content="This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.">
+  <meta property="og:description" name="description" content="In recent years, machine learning (ML) has transformed how researchers analyze complex health data. From predicting skilled birth attendance to classifying air quality, algorithms like XGBoost and Random Forest now routinely outperform traditional statistical models. But in public health, accuracy alone is not enough — we need to understand why a model makes a prediction.">
 
 
-  <meta property="og:url" content="https://muhammadsalek.github.io/posts/2012/08/blog-post-1/">
+  <meta property="og:url" content="https://muhammadsalek.github.io/posts/2025/12/ml-public-health-explainability/">
 
 
 
@@ -290,41 +290,76 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Blog Post number 1">
-    <meta itemprop="description" content="This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.">
-    <meta itemprop="datePublished" content="August 14, 2012">
+    <meta itemprop="headline" content="Machine Learning in Public Health: Why Explainability Matters">
+    <meta itemprop="description" content="In recent years, machine learning (ML) has transformed how researchers analyze complex health data. From predicting skilled birth attendance to classifying air quality, algorithms like XGBoost and Random Forest now routinely outperform traditional statistical models. But in public health, accuracy alone is not enough — we need to understand why a model makes a prediction.">
+    <meta itemprop="datePublished" content="December 01, 2025">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Blog Post number 1
+          <h1 class="page__title" itemprop="headline">Machine Learning in Public Health: Why Explainability Matters
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
 
 
   
-	  less than 1 minute read
+	  1 minute read
 	
 </p>
           
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2012-08-14T00:00:00+06:00">August 14, 2012</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2025-12-01T00:00:00+06:00">December 01, 2025</time></p>
             
         </header>
       
 
       <section class="page__content" itemprop="text">
-        <p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+        <p>In recent years, machine learning (ML) has transformed how researchers analyze complex health data. From predicting skilled birth attendance to classifying air quality, algorithms like XGBoost and Random Forest now routinely outperform traditional statistical models. But in public health, <strong>accuracy alone is not enough</strong> — we need to understand <em>why</em> a model makes a prediction.</p>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<h2 id="the-challenge-black-box-models-in-health-policy">The Challenge: Black-Box Models in Health Policy</h2>
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+<p>When a model predicts that a woman in rural Bangladesh is at high risk of delivering without skilled attendance, policymakers need to know which factors drove that prediction. Was it lack of antenatal care visits? Geographic remoteness? Low education? Without this understanding, interventions cannot be targeted effectively.</p>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>
+<p>This is where <strong>Explainable AI (XAI)</strong> becomes critical.</p>
+
+<h2 id="shap-values-making-ml-transparent">SHAP Values: Making ML Transparent</h2>
+
+<p>SHAP (SHapley Additive exPlanations) values assign each feature a contribution score for a specific prediction. In our studies on skilled birth attendance across Bangladesh, Nepal, Zambia, and Burkina Faso, SHAP analysis consistently revealed:</p>
+
+<ul>
+  <li><strong>Antenatal care visits</strong> — the single most important predictor across all countries</li>
+  <li><strong>Wealth index</strong> — strong positive effect, but with significant spatial heterogeneity</li>
+  <li><strong>Education level</strong> — non-linear effects, with diminishing returns at higher levels</li>
+  <li><strong>Place of residence</strong> — rural–urban disparity remained even after adjusting for other factors</li>
+</ul>
+
+<h2 id="handling-imbalanced-dhs-survey-data">Handling Imbalanced DHS Survey Data</h2>
+
+<p>Demographic and Health Survey (DHS) data presents a unique challenge: outcome classes are often severely imbalanced. For example, in Burkina Faso, only ~67% of deliveries occurred with skilled attendance, and simple models trained on raw data systematically underpredict the minority class.</p>
+
+<p>Our approach uses <strong>SMOTE (Synthetic Minority Over-sampling Technique)</strong> combined with survey-weighted sampling to address this, followed by threshold optimization on the validation set using the F1-score and ROC-AUC.</p>
+
+<h2 id="key-takeaway">Key Takeaway</h2>
+
+<p>The most powerful ML model is useless if it cannot inform policy. In all our manuscripts, we pair predictive modeling with:</p>
+
+<ol>
+  <li><strong>SHAP global importance plots</strong> for feature ranking</li>
+  <li><strong>SHAP dependence plots</strong> for interaction effects</li>
+  <li><strong>Choropleth maps</strong> for spatial inequality visualization</li>
+  <li><strong>Stratified analyses</strong> by rural/urban, wealth quintile, and education level</li>
+</ol>
+
+<p>This combination transforms a predictive model into an <strong>actionable policy tool</strong>.</p>
+
+<hr />
+
+<p><em>For questions or collaboration, contact: <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></em><br />
+<em>Related publications: See <a href="/publications/">Publications page</a></em></p>
 
 
         
@@ -352,15 +387,23 @@
     
       
       
-      <a href="https://muhammadsalek.github.io/tags/#category1" class="page__taxonomy-item" rel="tag">category1</a><span class="sep">, </span>
+      <a href="https://muhammadsalek.github.io/tags/#epidemiology" class="page__taxonomy-item" rel="tag">epidemiology</a><span class="sep">, </span>
     
       
       
-      <a href="https://muhammadsalek.github.io/tags/#category2" class="page__taxonomy-item" rel="tag">category2</a><span class="sep">, </span>
+      <a href="https://muhammadsalek.github.io/tags/#explainable-ai" class="page__taxonomy-item" rel="tag">explainable AI</a><span class="sep">, </span>
     
       
       
-      <a href="https://muhammadsalek.github.io/tags/#cool-posts" class="page__taxonomy-item" rel="tag">cool posts</a>
+      <a href="https://muhammadsalek.github.io/tags/#machine-learning" class="page__taxonomy-item" rel="tag">machine learning</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://muhammadsalek.github.io/tags/#public-health" class="page__taxonomy-item" rel="tag">public health</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://muhammadsalek.github.io/tags/#shap" class="page__taxonomy-item" rel="tag">SHAP</a>
     
     </span>
   </p>
@@ -377,15 +420,15 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://bsky.app/intent/compose?text=https://muhammadsalek.github.io/posts/2012/08/blog-post-1/" class="btn btn--bluesky" title="Share on Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
+  <a href="https://bsky.app/intent/compose?text=https://muhammadsalek.github.io/posts/2025/12/ml-public-health-explainability/" class="btn btn--bluesky" title="Share on Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://muhammadsalek.github.io/posts/2012/08/blog-post-1/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://muhammadsalek.github.io/posts/2025/12/ml-public-health-explainability/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://muhammadsalek.github.io/posts/2012/08/blog-post-1/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://muhammadsalek.github.io/posts/2025/12/ml-public-health-explainability/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 
-  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=https%3A%2F%2Fmuhammadsalek.github.io%2Fposts%2F2012%2F08%2Fblog-post-1%2F" class="btn btn--mastodon" title="Share on Mastodon"><i class="fab fa-mastodon" aria-hidden="true"></i><span> Mastodon</span></a>
+  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=https%3A%2F%2Fmuhammadsalek.github.io%2Fposts%2F2025%2F12%2Fml-public-health-explainability%2F" class="btn btn--mastodon" title="Share on Mastodon"><i class="fab fa-mastodon" aria-hidden="true"></i><span> Mastodon</span></a>
 
-  <a href="https://x.com/intent/post?text=https://muhammadsalek.github.io/posts/2012/08/blog-post-1/" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
+  <a href="https://x.com/intent/post?text=https://muhammadsalek.github.io/posts/2025/12/ml-public-health-explainability/" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
 </section>
 
 
@@ -394,10 +437,11 @@
 
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Previous</a>
+      <a href="https://muhammadsalek.github.io/posts/2012/08/blog-post-4/" class="pagination--pager" title="Blog Post number 4
+">Previous</a>
     
     
-      <a href="https://muhammadsalek.github.io/posts/2013/08/blog-post-2/" class="pagination--pager" title="Blog Post number 2
+      <a href="https://muhammadsalek.github.io/posts/2026/01/spatial-inequalities-maternal-health/" class="pagination--pager" title="Spatial Inequalities in Maternal Health: What Maps Tell Us That Tables Cannot
 ">Next</a>
     
   </nav>
@@ -512,7 +556,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://muhammadsalek.github.io/posts/2025/12/ml-public-health-explainability/" rel="permalink">Machine Learning in Public Health: Why Explainability Matters
+        <a href="https://muhammadsalek.github.io/posts/2012/08/blog-post-4/" rel="permalink">Blog Post number 4
 </a>
       
     </h2>
@@ -522,17 +566,17 @@
 
 
   
-	  2 minute read
+	  less than 1 minute read
 	
 </p>
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2025-12-01T00:00:00+06:00">December 01, 2025</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2015-08-14T00:00:00+06:00">August 14, 2015</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>In recent years, machine learning (ML) has transformed how researchers analyze complex health data. From predicting skilled birth attendance to classifying air quality, algorithms like XGBoost and Random Forest now routinely outperform traditional statistical models. But in public health, <strong>accuracy alone is not enough</strong> — we need to understand <em>why</em> a model makes a prediction.</p>
+    <p class="archive__item-excerpt" itemprop="description"><p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
 
 </p>
     
@@ -555,7 +599,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://muhammadsalek.github.io/posts/2012/08/blog-post-4/" rel="permalink">Blog Post number 4
+        <a href="https://muhammadsalek.github.io/posts/2014/08/blog-post-3/" rel="permalink">Blog Post number 3
 </a>
       
     </h2>
@@ -571,7 +615,7 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2015-08-14T00:00:00+06:00">August 14, 2015</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2014-08-14T00:00:00+06:00">August 14, 2014</time></p>
         
 
     
