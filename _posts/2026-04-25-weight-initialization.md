@@ -1,0 +1,22 @@
+---
+title: "Statistics for ML #94 — Weight Initialization Strategies"
+date: 2026-04-25
+permalink: /posts/2026/04/weight-initialization/
+tags: [deep-learning, neural-networks, optimization]
+---
+
+## Weight Initialization Strategies
+
+Post **#94/100** in the *Statistics for ML* series — [Md Salek Miah](/) | Statistician & ML Researcher | SUST, Bangladesh.
+
+This post provides a complete treatment of **Weight Initialization Strategies** with mathematical foundations, Python/R implementations, and connections to public health ML research.
+
+```python
+# Full implementation available at github.com/muhammadsalek
+import numpy as np, pandas as pd
+from scipy import stats
+print('Post #94: Weight Initialization Strategies')
+```
+
+---
+*[Series Index](/posts/2026/01/statistics-ml-index/) | Post #94/100 | [Md Salek Miah](/) | [saleksta@gmail.com](mailto:saleksta@gmail.com)*
