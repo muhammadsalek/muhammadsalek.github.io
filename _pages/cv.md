@@ -17,7 +17,7 @@ redirect_from:
 
 **B.Sc. (Honours) in Statistics**  
 *Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh* · 2021–Present  
-- **Current Standing:** 3rd Year, 2nd Semester  
+- **Current Standing:** Bsc in Statistics,  Final Year  
 - **Academic Performance:** GPA ≥ 3.75/4.00 in all major statistical courses (Probability, Regression, Statistical Inference, Sampling, Design of Experiments)  
 - **Advanced Coursework:** Machine Learning, Epidemiological Methods, Research Methodology, Data Science, Demography, Stochastic Processes
 
