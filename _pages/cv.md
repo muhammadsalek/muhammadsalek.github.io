@@ -9,127 +9,170 @@ redirect_from:
 
 {% include base_path %}
 
-> 📥 **Download Full PDF CV:** [Salek_Miah_PhD_CV.pdf](/files/Salek_Miah_PhD_CV.pdf)
+>  **Download Full PDF CV:** [Salek_Miah_PhD_CV.pdf](/files/Salek_Miah_PhD_CV.pdf)
 
 ---
 
-## 🎓 Education
+##  Education
 
 **B.Sc. (Honours) in Statistics**  
-Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh · 2021–Present  
-Current: 3rd Year, 2nd Semester · GPA ~3.5–4.00/4.00 in all major statistical courses
+*Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh* · 2021–Present  
+- **Current Standing:** 3rd Year, 2nd Semester  
+- **Academic Performance:** GPA ≥ 3.75/4.00 in all major statistical courses (Probability, Regression, Statistical Inference, Sampling, Design of Experiments)  
+- **Advanced Coursework:** Machine Learning, Epidemiological Methods, Research Methodology, Data Science, Demography, Stochastic Processes
 
 ---
 
-## 🔬 Research Experience
+##  Research Experience
 
 ### SUST Biostatistics, Epidemiology & Public Health Research Team
 *Research Collaborator* · January 2024 – Present  
-Supervisor: Prof. Dr. Md. Jamal Uddin, Department of Statistics, SUST  
-- Authored/co-authored 20+ manuscripts submitted to Q1 journals
-- Multi-country DHS analysis: Bangladesh, Nepal, Zambia, Burkina Faso, Mozambique
-- Spatial ML modeling, explainable AI (SHAP/LIME), complex survey-weighted regression
+*Supervisor:* Prof. Dr. Md. Jamal Uddin, Department of Statistics, SUST  
+- Lead author/co-author of 20+ manuscripts under review in Q1 journals (e.g., *Scientific Reports*, *BMC Pregnancy and Childbirth*, *BMJ Global Health*)  
+- Multi-country DHS analysis (Bangladesh, Nepal, Zambia, Burkina Faso, Mozambique) using complex survey-weighted regression, spatial ML, and explainable AI (SHAP/LIME)  
+- Focus areas: maternal health (skilled birth attendance, antenatal care), child stunting, mental health (depression/anxiety), and intimate partner violence
 
 ### ELITE Research Lab
 *Research Assistant* · January 2026 – Present  
-Focus: Generative AI, Explainable AI (XAI), NLP, Computer Vision, Human-AI Interaction  
-- Developed interpretable AI models for healthcare decision-making
-- Worked on agentic AI and privacy-preserving AI solutions
+- Developing interpretable AI models for healthcare decision-making using explainable AI (XAI) and privacy-preserving techniques  
+- Working on agentic AI systems for autonomous reasoning and human-AI interaction
 
 ### Cognitive Solution Bangladesh (CSBD) / TeamCSBD
 *Research Assistant* · January 2025 – Present  
-Supervisors affiliated with UBC Canada & University of Saskatchewan  
-- Intensive epidemiology & public health training program (Jan–Jul 2025)
-- Led "Trends of Under-Five Child Stunting in Bangladesh and WASH Practices" project
+*Supervisors affiliated with UBC Canada & University of Saskatchewan*  
+- Completed intensive epidemiology & public health training program (Jan–Jul 2025)  
+- Led project: *"Trends of Under-Five Child Stunting in Bangladesh and Association with Household WASH Practices"*  
+- Reproducible research pipelines using STATA, R, Python; interactive dashboards for health disparities research
 
 ### DataKothon Research Lab, Bangladesh
 *Research Assistant (Intern)* · June–August 2025  
-- Systematic literature reviews, meta-analyses, epidemiological data management
+- Systematic literature reviews, meta-analyses, and epidemiological data management for peer-reviewed publications
 
 ### SUST Research Centre Funded Projects
 *Research Collaborator* · 2023–Present  
-Supervisors: Dr. Sabina Islam · Prof. Dr. Md. Zakir Hossain · Dr. Mohammad Ohid Ullah  
-- Impact of Pesticide Use on Farmers' Health in North-Eastern Bangladesh (2025–26, SUST Funded)
+*Supervisors:* Dr. Sabina Islam · Prof. Dr. Md. Zakir Hossain · Dr. Mohammad Ohid Ullah  
+- *Impact of Pesticide Use on Farmers' Health in North-Eastern Bangladesh* (2025–26, SUST-funded) – longitudinal data modeling and GLM  
+- Statistical demography research: fertility, mortality, migration, women's empowerment, LULC change, flood vulnerability
 
 ---
 
-## 📰 Publications
+##  Selected Publications
 
-**Published (Scopus/WoS):**
-1. *BMC Women's Health* (Springer Nature) — Associations of Internet Use and Pregnancy Loss with Depression and Anxiety among Women in Bangladesh · DOI: [10.1186/s12905-025-04166-4](https://doi.org/10.1186/s12905-025-04166-4) · 2025
-2. *Health Science Reports* (Wiley) — Household Water/Handwashing Facilities and Early Childhood Education in Nepal · DOI: [10.1002/hsr2.72254](https://doi.org/10.1002/hsr2.72254) · 2026
-3. *International Journal of Statistical Sciences* — Determinants of Depression Among Women in Bangladesh: A Machine Learning Approach · DOI: [10.3329/ijss.v25i2.85733](https://doi.org/10.3329/ijss.v25i2.85733) · 2025
+**Peer-Reviewed (Scopus/WoS):**
+1. **Md Salek Miah**, Mohammad Ohid Ullah. *Associations of Internet Use and Pregnancy Loss with Depression and Anxiety among Women in Bangladesh*. **BMC Women's Health** (Springer Nature), 2025. DOI: [10.1186/s12905-025-04166-4](https://doi.org/10.1186/s12905-025-04166-4)
+2. **Md Salek Miah**, et al. *Household Water and Handwashing Facilities and Early Childhood Education Participation in Nepal*. **Health Science Reports** (Wiley), 2026. DOI: [10.1002/hsr2.72254](https://doi.org/10.1002/hsr2.72254)
+3. **Md Salek Miah**, Mohammad Ohid Ullah. *Identifying Determinants of Depression Among Ever-Married Women in Bangladesh: A Machine Learning Approach*. **International Journal of Statistical Sciences**, 25(2):33–46, 2025. DOI: [10.3329/ijss.v25i2.85733](https://doi.org/10.3329/ijss.v25i2.85733)
 
-**20+ manuscripts under review in Q1 journals** — See [Publications page](/publications/) for full list.
+**Manuscripts Under Review (Q1 Journals – Selected):**
+- *Machine Learning Analysis of Skilled Birth Attendance in Burkina Faso* – **Scientific Reports**
+- *Predicting Cesarean Delivery Using ML in Six Asian LMICs* – **Scientific Reports**
+- *Determinants and Provincial Inequalities of Low Birth Weight in Bangladesh and Nepal* – **International Journal for Equity in Health**
+- *Women's Decision-Making Autonomy and Mental Health in Five LMICs* – **BMJ Global Health**
+- *Intimate Partner Violence and Dual Burden of Anxiety/Depression in Zambia* – **Global Mental Health** (Cambridge)
 
----
-
-## 🎤 Conference Presentations
-
-- **14th Al Farabi International Congress**, Selçuk University, Türkiye · April 2025 *(CVD Risk ML)*
-- **RURS 1st International Student Conference**, Rajshahi University · 2025 *(Buriganga River WQI)*
-- **University of Liverpool Conference** · 2025 *(Epigenetics/RPD3)*
-- **2nd Student Research Conference**, Leading University, Sylhet · 2025 *(Mental Health)*
-- **Bangladesh Statistical Association Conference** · 2025 *(Maternal Health, Haor Region)*
+>  Full list of 20+ manuscripts under review available on [Publications page](/publications/).
 
 ---
 
-## 🏆 Awards & Honors
+##  Conference Presentations
+
+- **14th Al Farabi International Congress** – Selçuk University, Türkiye (Apr 2025) – *CVD Risk Prediction using ML & Survival Analysis*  
+- **RURS 1st International Student Conference** – Rajshahi University (2025) – *Buriganga River Water Quality & Public Health Risks*  
+- **University of Liverpool Conference** (2025) – *RPD3 Phosphorylation as an Epigenetic Switch in Yeast Metabolic Regulation*  
+- **2nd Student Research Conference** – Leading University, Sylhet (2025) – *Mental Health of University Students During Quota Movement*  
+- **Bangladesh Statistical Association Conference** (2025) – *Maternal & Newborn Healthcare Determinants in Haor Region*
+
+---
+
+##  Awards & Honors
 
 | Award | Organization | Year | Prize |
 |-------|-------------|------|-------|
-| Winner — DNA Day Writing Contest | ISCB RSG Bangladesh | 2025 | — |
-| Runner-up — Poster Competition | 6th Bangladesh Economics Summit | 2025 | 10,000 BDT |
-| Top 10 — Data Hackathon | Comilla University | 2025 | — |
+| Winner – DNA Day Writing Contest | ISCB RSG Bangladesh | 2025 | — |
+| Runner-up – Poster Competition | 6th Bangladesh Economics Summit | 2025 | 10,000 BDT |
+| Top 10 – Data Hackathon | Comilla University | 2025 | — |
 | Scholarship Recipient | Aftab Uddin–Khudeja Banu Welfare Trust UK | 2016 | 10,000 BDT |
 | Scholarship Recipient | Khandoker Trust International | 2013 | — |
 
 ---
 
-## 🛠️ Skills
+## 🛠️ Technical Skills
 
-**Statistical Programming:** R (tidyverse, survey, lme4, lavaan, survival, spdep) · Python (pandas, scikit-learn, geopandas) · STATA · SPSS · SAS  
-**Machine Learning:** XGBoost · Random Forest · SVM · Neural Networks · H2O.ai · Caret · TensorFlow · Keras  
+**Statistical Programming:**  
+R (tidyverse, survey, lme4, lavaan, survival, spdep) · Python (pandas, scikit-learn, geopandas, statsmodels) · STATA · SPSS · SAS
+
+**Machine Learning & AI:**  
+XGBoost · Random Forest · SVM · Neural Networks · H2O.ai · Caret · TensorFlow · Keras  
 **Explainable AI:** SHAP · LIME · DALEX  
-**Geospatial:** ArcGIS Pro · QGIS · sf · tmap · geopandas · folium  
-**Visualization:** ggplot2 · Plotly · Tableau · Power BI · Matplotlib · Seaborn  
-**Research Tools:** LaTeX/Overleaf · R Shiny · Git · Docker · Dagitty · Jupyter · RMarkdown  
+**Deep Learning:** CNNs, RNNs, Transfer Learning
+
+**Geospatial Analysis:**  
+ArcGIS Pro · QGIS · sf · tmap · geopandas · folium · spdep
+
+**Visualization:**  
+ggplot2 · Plotly · Tableau · Power BI · Matplotlib · Seaborn
+
+**Research Tools:**  
+LaTeX/Overleaf · R Shiny · Git · Docker · Dagitty · Jupyter · RMarkdown
+
+**Databases:** MySQL · MS Access · DBeaver
 
 ---
 
-## 🌍 Peer Review
+##  Peer Review & Editorial Service
 
-- **Invited Peer Reviewer** — *Cambridge Prisms: Global Mental Health* (Cambridge University Press) · March 2026–Present
-
----
-
-## 🤝 International Collaborations
-
-- Dr. Mohammad Shahab Uddin — University of Chittagong / University of Essex, UK
-- Saskatchewan Population Health and Evaluation Research Unit (SPHERU), Canada
-- Brunel University London · De Montfort University Leicester · University of Oulu, Finland (Erasmus Mundus)
+- **Invited Peer Reviewer** – *Cambridge Prisms: Global Mental Health* (Cambridge University Press) · March 2026 – Present
 
 ---
 
-## 🏛️ Professional Memberships
+##  International Collaborations
 
-- Research Collaborator — SUST Biostatistics, Epidemiology & Public Health Research Team
-- Member — Share-Net Bangladesh (International SRHR Knowledge Network, 2026)
-- Member — International Society for Computational Biology (ISCB)
-- Student Member — Bangladesh Statistical Association (BSA)
-- Research Collaborator — Cognitive Solution Bangladesh (CSBD)
-- Research Collaborator — DataKothon Research Lab & Innovation Research Bangladesh (IRB)
-- Member — SUST Data Science Club · Daffodil International University Research Society
+- **Dr. Mohammad Shahab Uddin** – University of Chittagong / University of Essex, UK  
+- **Saskatchewan Population Health and Evaluation Research Unit (SPHERU)** – Canada  
+- **Brunel University London** · **De Montfort University Leicester** · **University of Oulu, Finland** (Erasmus Mundus Scholar collaboration)
 
 ---
 
-## 📜 Certifications
+##  Professional Memberships
 
-- Data Science and Machine Learning with Python — Coursera, Jan 2025
-- Data Analysis with R — IBM via Coursera (Credly Verified), Oct 2024
-- Exploratory Data Analysis for Machine Learning — IBM, Jan 2025
-- Machine Learning using Python — Simplilearn
-- Deep Learning for Beginners — Simplilearn
-- Inferential Statistics — Great Learning
-- Statistics for Machine Learning — Great Learning
-- MKCRD Basic Research Training (Season Two) — March 2026
+- Research Collaborator – SUST Biostatistics, Epidemiology & Public Health Research Team  
+- Member – Share-Net Bangladesh (International SRHR Knowledge Network, 2026)  
+- Member – International Society for Computational Biology (ISCB)  
+- Student Member – Bangladesh Statistical Association (BSA)  
+- Research Collaborator – Cognitive Solution Bangladesh (CSBD)  
+- Research Collaborator – DataKothon Research Lab & Innovation Research Bangladesh (IRB)  
+- Member – SUST Data Science Club · Daffodil International University Research Society
+
+---
+
+##  Selected Certifications
+
+- **Data Science and Machine Learning with Python** – Coursera (Jan 2025)  
+- **Data Analysis with R** – IBM via Coursera, Credly Verified (Oct 2024)  
+- **Exploratory Data Analysis for Machine Learning** – IBM (Jan 2025)  
+- **Machine Learning using Python** – Simplilearn  
+- **Deep Learning for Beginners** – Simplilearn  
+- **Inferential Statistics** – Great Learning  
+- **Statistics for Machine Learning** – Great Learning  
+- **MKCRD Basic Research Training (Season Two)** – Mar 2026
+
+---
+
+##  Featured Projects
+
+- **Interactive Statistical Calculator** – R Shiny. [Live Demo](https://qa8m8h-md0salek-miah.shinyapps.io/calculator/)  
+- **MovieLens Recommendation System** – R Studio / Hugging Face Spaces. [Live Demo](https://huggingface.co/spaces/salekml/MovieLens_App1)  
+- **Water Quality Intelligence Platform (Buriganga River)** – Real-time monitoring for climate-resilient decision-making. [Live Demo](https://salek.shinyapps.io/aqualens/)  
+- **Weather Monitoring & Forecast App** – R Studio / Hugging Face Spaces. [Live Demo](https://huggingface.co/spaces/salekml/Weather_app)
+
+---
+
+##  Teaching Experience
+
+- **Statistics & Mathematics Tutor** – Local coaching centers, Sylhet (2022–Present)  
+  – Improved student exam scores by average 1.5 letter grades  
+- **Workshop Instructor** – SUST Research Science Club (Nov 2024–Present)  
+  – Conducted hands-on R programming and ggplot2 workshops for 150+ participants
+
+---
+
