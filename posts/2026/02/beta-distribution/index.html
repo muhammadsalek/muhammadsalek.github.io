@@ -1,0 +1,752 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Statistics for ML #32 — Beta Distribution - Md Salek Miah</title>
+
+
+
+<meta name="description" content="Beta Distribution">
+
+
+
+
+
+  <meta property="article:published_time" content="2026-02-03T00:00:00+06:00">
+
+
+
+  <link rel="canonical" href="https://muhammadsalek.github.io/posts/2026/02/beta-distribution/">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Md Salek Miah",
+      "url" : "https://muhammadsalek.github.io",
+      "sameAs" : ["https://github.com/muhammadsalek","https://www.linkedin.com/in/md-salek-miah","https://orcid.org/0009-0005-5973-461X","https://www.researchgate.net/profile/Md-Miah-142","https://www.kaggle.com/muhammadsalekmiah","https://salek-protfolio.vercel.app/","https://www.webofscience.com/wos/author/record/PII-8481-2026"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Md Salek Miah"> 
+<meta property="og:title" content="Statistics for ML #32 — Beta Distribution">
+
+  <meta property="og:type" content="article">
+
+
+  <meta property="og:description" name="description" content="Beta Distribution">
+
+
+  <meta property="og:url" content="https://muhammadsalek.github.io/posts/2026/02/beta-distribution/">
+
+
+
+
+
+<!-- end Open Graph protocol -->
+
+<link href="https://muhammadsalek.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Md Salek Miah Feed">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://muhammadsalek.github.io/assets/css/main.css">
+
+    
+
+<!-- start custom head snippets -->
+
+<!-- Support for Academicons -->
+<link rel="stylesheet" href="https://muhammadsalek.github.io/assets/css/academicons.css"/>
+
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://muhammadsalek.github.io/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="https://muhammadsalek.github.io/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="https://muhammadsalek.github.io/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="https://muhammadsalek.github.io/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="https://muhammadsalek.github.io/images/manifest.json"/>
+<link rel="icon" href="/images/favicon.ico"/>
+<meta name="theme-color" content="#ffffff"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><span class="navicon"></span></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist ">
+            <a href="https://muhammadsalek.github.io/">Md Salek Miah</a>
+          </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://muhammadsalek.github.io/publications/">Publications</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://muhammadsalek.github.io/talks/">Talks</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://muhammadsalek.github.io/teaching/">Teaching</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://muhammadsalek.github.io/portfolio/">Portfolio</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://muhammadsalek.github.io/year-archive/">Blog</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://muhammadsalek.github.io/cv/">CV</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://muhammadsalek.github.io/markdown/">Guide</a>
+            </li>
+          
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://muhammadsalek.github.io/images/profile.png" class="author__avatar" alt="Md Salek Miah"  fetchpriority="high" />
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Md Salek Miah</h3>
+    <p class="author__pronouns">he/him</p>
+    <p class="author__bio">Statistician & ML Specialist | Epidemiology & Public Health | 2 Published + 20+ Under Review in Q1 Journals | PhD Applicant</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>Sylhet, Bangladesh</li>
+      
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>Shahjalal University of Science & Technology (SUST)</li>
+      
+      
+        <li><a href="https://salek-protfolio.vercel.app/"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>Website</a></li>
+      
+      
+        <li><a href="mailto:saleksta@gmail.com"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+      
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+      
+            
+      
+            
+      
+      
+        <li><a href="https://orcid.org/0009-0005-5973-461X"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+      
+                              
+      
+        <li><a href="https://www.researchgate.net/profile/Md-Miah-142"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>ResearchGate</a></li>
+      
+      
+      
+      
+      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+        <li><a href="https://github.com/muhammadsalek"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+      
+      
+        <li><a href="https://kaggle.com/muhammadsalekmiah"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i>Kaggle</a></li>
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+              
+      
+      
+            
+      
+                  
+                  
+      
+            
+            
+      
+        <li><a href="https://www.linkedin.com/in/md-salek-miah"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+              
+      
+                      
+      
+      
+            
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Statistics for ML #32 — Beta Distribution">
+    <meta itemprop="description" content="Beta Distribution">
+    <meta itemprop="datePublished" content="February 03, 2026">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Statistics for ML #32 — Beta Distribution
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
+
+
+  
+	  1 minute read
+	
+</p>
+          
+        
+        
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2026-02-03T00:00:00+06:00">February 03, 2026</time></p>
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h2 id="beta-distribution">Beta Distribution</h2>
+
+<p>Post <strong>#32</strong> of 100 in the <em>Statistics for ML</em> series by <a href="/">Md Salek Miah</a> — Statistician, SUST Bangladesh.</p>
+
+<h3 id="what-you-will-learn">What You Will Learn</h3>
+
+<p>The <strong>Beta Distribution</strong> is one of the core building blocks of quantitative research. This post covers:</p>
+
+<ol>
+  <li><strong>Mathematical definition</strong> — precise and complete</li>
+  <li><strong>Intuitive explanation</strong> — what it means in plain language</li>
+  <li><strong>Public health application</strong> — real examples from DHS survey research</li>
+  <li><strong>Python implementation</strong> — ready-to-run code</li>
+  <li><strong>R implementation</strong> — for epidemiologists and survey analysts</li>
+  <li><strong>ML connection</strong> — how this concept appears in modern algorithms</li>
+</ol>
+
+<h3 id="core-mathematics">Core Mathematics</h3>
+
+<p>The Beta Distribution formalises how we model probability distributions for continuous and multivariate data.</p>
+
+<h3 id="python-code">Python Code</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="c1"># Beta Distribution — implementation example
+# Full code available at: github.com/muhammadsalek
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Post #32: Beta Distribution"</span><span class="p">)</span>
+
+<span class="c1"># Example: Load DHS-style data
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s">'anc_visits'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">poisson</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'birth_weight'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">3100</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'sba'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.67</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'wealth_q'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'rural'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1"># Apply Beta Distribution concepts here
+</span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">describe</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h3 id="r-code">R Code</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">survey</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">broom</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Beta Distribution in R</span><span class="w">
+</span><span class="c1"># Designed for DHS complex survey analysis</span><span class="w">
+
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"Statistics for ML #32: Beta Distribution\n"</span><span class="p">)</span><span class="w">
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"By: Md Salek Miah | SUST | saleksta@gmail.com\n"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Example with survey design</span><span class="w">
+</span><span class="c1"># dhs_design &lt;- svydesign(id=~psu, strata=~strata,</span><span class="w">
+</span><span class="c1">#                          weights=~weight, data=dhs_data)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="connection-to-my-research">Connection to My Research</h3>
+
+<p>In my published work on maternal health and mental health outcomes across LMICs, Beta Distribution appears in:</p>
+
+<ul>
+  <li>Model specification for binary health outcomes (SBA, stunting, IPV)</li>
+  <li>Spatial inequality analysis across districts and provinces</li>
+  <li>Machine learning pipeline design (XGBoost, Random Forest with SHAP)</li>
+  <li>Survey-weighted inference using complex DHS sampling designs</li>
+</ul>
+
+<h3 id="key-takeaways">Key Takeaways</h3>
+
+<ul>
+  <li>✅ Understand the mathematical foundation</li>
+  <li>✅ Know when to apply this technique vs alternatives</li>
+  <li>✅ Implement correctly in Python and R</li>
+  <li>✅ Interpret results in context of public health research</li>
+  <li>✅ Connect to ML model design decisions</li>
+</ul>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>*<a href="#">← Previous post</a></td>
+      <td><a href="/posts/2026/01/statistics-ml-index/">Series index</a></td>
+      <td><a href="#">Next post →</a>*</td>
+    </tr>
+    <tr>
+      <td>*Questions? <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></td>
+      <td><a href="https://www.researchgate.net/profile/Md-Miah-142">ResearchGate</a>*</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://muhammadsalek.github.io/tags/#inference" class="page__taxonomy-item" rel="tag">inference</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://muhammadsalek.github.io/tags/#machine-learning" class="page__taxonomy-item" rel="tag">machine-learning</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://muhammadsalek.github.io/tags/#regression" class="page__taxonomy-item" rel="tag">regression</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://muhammadsalek.github.io/tags/#statistics" class="page__taxonomy-item" rel="tag">statistics</a>
+    
+    </span>
+  </p>
+
+
+
+
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://bsky.app/intent/compose?text=https://muhammadsalek.github.io/posts/2026/02/beta-distribution/" class="btn btn--bluesky" title="Share on Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://muhammadsalek.github.io/posts/2026/02/beta-distribution/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://muhammadsalek.github.io/posts/2026/02/beta-distribution/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+
+  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=https%3A%2F%2Fmuhammadsalek.github.io%2Fposts%2F2026%2F02%2Fbeta-distribution%2F" class="btn btn--mastodon" title="Share on Mastodon"><i class="fab fa-mastodon" aria-hidden="true"></i><span> Mastodon</span></a>
+
+  <a href="https://x.com/intent/post?text=https://muhammadsalek.github.io/posts/2026/02/beta-distribution/" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
+</section>
+
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="https://muhammadsalek.github.io/posts/2026/02/exponential/" class="pagination--pager" title="Statistics for ML #31 — Exponential Distribution
+">Previous</a>
+    
+    
+      <a href="https://muhammadsalek.github.io/posts/2026/02/dirichlet/" class="pagination--pager" title="Statistics for ML #33 — Dirichlet Distribution
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://muhammadsalek.github.io/posts/2012/08/blog-post-4/" rel="permalink">Future Blog Post
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2199-01-01T00:00:00+06:00">January 01, 2199</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>This post will show up by default. To disable scheduling of future posts, edit <code class="language-plaintext highlighter-rouge">config.yml</code> and set <code class="language-plaintext highlighter-rouge">future: false</code>.</p>
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://muhammadsalek.github.io/posts/2026/04/causal-inference/" rel="permalink">Statistics for ML #99 — Causal Inference: DAGs, Do-Calculus
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
+
+
+  
+	  1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2026-04-02T00:00:00+06:00">April 02, 2026</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><h2 id="causal-inference-dags-do-calculus">Causal Inference: DAGs, Do-Calculus</h2>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://muhammadsalek.github.io/posts/2026/02/multicollinearity/" rel="permalink">Statistics for ML #57 — Multicollinearity &amp; VIF
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
+
+
+  
+	  2 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2026-03-28T00:00:00+06:00">March 28, 2026</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><h2 id="multicollinearity--vif">Multicollinearity &amp; VIF</h2>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://muhammadsalek.github.io/posts/2026/02/residual-diagnostics/" rel="permalink">Statistics for ML #56 — Residual Analysis &amp; Diagnostics
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
+
+
+  
+	  2 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2026-03-27T00:00:00+06:00">March 27, 2026</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><h2 id="residual-analysis--diagnostics">Residual Analysis &amp; Diagnostics</h2>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<a href="/sitemap/">Sitemap</a>
+
+<!-- Support for MatJax -->
+<script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+<!-- Support for Mermaid -->
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({startOnLoad:true, theme:'default'});
+    await mermaid.run({querySelector:'code.language-mermaid'});
+</script>
+
+<!-- end custom footer snippets -->
+
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://github.com/muhammadsalek"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://muhammadsalek.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">
+  &copy; 2026 Md Salek Miah, Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated 2026-04-06
+</div>
+
+      </footer>
+    </div>
+
+    <script type="module" src="https://muhammadsalek.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

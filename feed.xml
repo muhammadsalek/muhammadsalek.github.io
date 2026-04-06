@@ -1,122 +1,883 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://muhammadsalek.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://muhammadsalek.github.io/" rel="alternate" type="text/html" /><updated>2026-04-06T04:12:54+06:00</updated><id>https://muhammadsalek.github.io/feed.xml</id><title type="html">Md Salek Miah</title><subtitle>Statistician | Epidemiology &amp; Public Health Researcher | Machine Learning Specialist | PhD Applicant</subtitle><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><entry><title type="html">Future Blog Post</title><link href="https://muhammadsalek.github.io/posts/2012/08/blog-post-4/" rel="alternate" type="text/html" title="Future Blog Post" /><published>2199-01-01T00:00:00+06:00</published><updated>2199-01-01T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2012/08/future-post</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2012/08/blog-post-4/"><![CDATA[<p>This post will show up by default. To disable scheduling of future posts, edit <code class="language-plaintext highlighter-rouge">config.yml</code> and set <code class="language-plaintext highlighter-rouge">future: false</code>.</p>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[This post will show up by default. To disable scheduling of future posts, edit config.yml and set future: false.]]></summary></entry><entry><title type="html">Spatial Inequalities in Maternal Health: What Maps Tell Us That Tables Cannot</title><link href="https://muhammadsalek.github.io/posts/2026/01/spatial-inequalities-maternal-health/" rel="alternate" type="text/html" title="Spatial Inequalities in Maternal Health: What Maps Tell Us That Tables Cannot" /><published>2026-01-15T00:00:00+06:00</published><updated>2026-01-15T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2026/01/spatial-inequalities</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2026/01/spatial-inequalities-maternal-health/"><![CDATA[<p>Numbers in a regression table tell you <em>that</em> an association exists. A map tells you <em>where</em> it exists — and where it is worst. In maternal health research across South Asia and Sub-Saharan Africa, this geographic dimension is not just interesting; it is <strong>essential for policy</strong>.</p>
-
-<h2 id="why-spatial-analysis">Why Spatial Analysis?</h2>
-
-<p>In Bangladesh, the national skilled birth attendance (SBA) rate is approximately 67%. But this aggregate number masks dramatic sub-national variation: Sylhet Division consistently records among the lowest rates (&lt;50%), while Dhaka Division exceeds 80%. A national policy that ignores this heterogeneity will fail the women who need it most.</p>
-
-<h2 id="our-approach-combining-ml-with-geospatial-methods">Our Approach: Combining ML with Geospatial Methods</h2>
-
-<p>In our multi-country studies, we follow a three-step spatial pipeline:</p>
-
-<h3 id="1-cluster-level-prediction">1. Cluster-Level Prediction</h3>
-<p>Using DHS GPS cluster coordinates, we generate ML-based predictions for each enumeration area and map them using <code class="language-plaintext highlighter-rouge">sf</code> and <code class="language-plaintext highlighter-rouge">tmap</code> in R (or <code class="language-plaintext highlighter-rouge">geopandas</code> in Python).</p>
-
-<h3 id="2-spatial-autocorrelation-testing">2. Spatial Autocorrelation Testing</h3>
-<p>We apply <strong>Moran’s I statistic</strong> to test whether low-SBA clusters are randomly distributed or spatially clustered. In all our studies, we find significant positive autocorrelation — meaning high-risk areas are geographically concentrated and mutually reinforcing.</p>
-
-<h3 id="3-local-indicators-of-spatial-association-lisa">3. Local Indicators of Spatial Association (LISA)</h3>
-<p>LISA maps identify specific “hot spots” (high-high clusters) and “cold spots” (low-low clusters) of poor maternal health outcomes. These become the direct targets for geographically prioritized interventions.</p>
-
-<h2 id="a-striking-finding-the-haor-region">A Striking Finding: The Haor Region</h2>
-
-<p>In our study of pregnancy danger sign knowledge in the Haor (wetland) region of Bangladesh, women in these flood-prone, geographically isolated communities showed dramatically lower knowledge scores than the national average — even after controlling for education, wealth, and healthcare access. The spatial pattern revealed that <strong>geographic isolation itself</strong> is an independent determinant, above and beyond individual-level factors.</p>
-
-<p>This finding has direct policy implications: mobile health units and community health worker programs must be geographically targeted to Haor districts, not just allocated proportionally by population.</p>
-
-<h2 id="tools-we-use">Tools We Use</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://muhammadsalek.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://muhammadsalek.github.io/" rel="alternate" type="text/html" /><updated>2026-04-06T20:16:39+06:00</updated><id>https://muhammadsalek.github.io/feed.xml</id><title type="html">Md Salek Miah</title><subtitle>Statistician | Epidemiology &amp; Public Health Researcher | Machine Learning Specialist | PhD Applicant</subtitle><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><entry><title type="html">Future Blog Post</title><link href="https://muhammadsalek.github.io/posts/2012/08/blog-post-4/" rel="alternate" type="text/html" title="Future Blog Post" /><published>2199-01-01T00:00:00+06:00</published><updated>2199-01-01T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2012/08/future-post</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2012/08/blog-post-4/"><![CDATA[<p>This post will show up by default. To disable scheduling of future posts, edit <code class="language-plaintext highlighter-rouge">config.yml</code> and set <code class="language-plaintext highlighter-rouge">future: false</code>.</p>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[This post will show up by default. To disable scheduling of future posts, edit config.yml and set future: false.]]></summary></entry><entry><title type="html">Statistics for ML #99 — Causal Inference: DAGs, Do-Calculus</title><link href="https://muhammadsalek.github.io/posts/2026/04/causal-inference/" rel="alternate" type="text/html" title="Statistics for ML #99 — Causal Inference: DAGs, Do-Calculus" /><published>2026-04-02T00:00:00+06:00</published><updated>2026-04-02T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2026/04/causal-inference</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2026/04/causal-inference/"><![CDATA[<h2 id="causal-inference-dags-do-calculus">Causal Inference: DAGs, Do-Calculus</h2>
 
 <table>
-  <thead>
-    <tr>
-      <th>Task</th>
-      <th>Tools</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Spatial data handling</td>
-      <td>R: <code class="language-plaintext highlighter-rouge">sf</code>, <code class="language-plaintext highlighter-rouge">spdep</code> · Python: <code class="language-plaintext highlighter-rouge">geopandas</code></td>
-    </tr>
-    <tr>
-      <td>Visualization</td>
-      <td>R: <code class="language-plaintext highlighter-rouge">tmap</code>, <code class="language-plaintext highlighter-rouge">ggplot2</code> · QGIS · ArcGIS Pro</td>
-    </tr>
-    <tr>
-      <td>Spatial autocorrelation</td>
-      <td><code class="language-plaintext highlighter-rouge">spdep::moran.test()</code> · GeoDa</td>
-    </tr>
-    <tr>
-      <td>Choropleth mapping</td>
-      <td><code class="language-plaintext highlighter-rouge">tmap</code> · <code class="language-plaintext highlighter-rouge">leaflet</code> · <code class="language-plaintext highlighter-rouge">folium</code></td>
+      <td>Post <strong>#99/100</strong> in the <em>Statistics for ML</em> series — <a href="/">Md Salek Miah</a></td>
+      <td>Statistician &amp; ML Researcher</td>
+      <td>SUST, Bangladesh.</td>
     </tr>
   </tbody>
 </table>
 
+<p><strong>Causal Inference</strong> moves beyond correlation to answer: “Does X <em>cause</em> Y?” This is the central question in public health policy.</p>
+
+<h3 id="dags-directed-acyclic-graphs">DAGs (Directed Acyclic Graphs)</h3>
+
+<p>A DAG encodes causal assumptions. Arrows represent direct causal effects. Used to identify confounders, mediators, and colliders.</p>
+
+<p><strong>Tools:</strong> Dagitty (web-based), <code class="language-plaintext highlighter-rouge">dagitty</code> R package — used in our DHS research for confounder selection.</p>
+
+<h3 id="do-calculus-pearls-framework">Do-Calculus (Pearl’s Framework)</h3>
+<p>\(P(Y | do(X=x)) \neq P(Y | X=x)\)</p>
+
+<p>The do-operator represents <em>intervening</em> to set X, vs <em>observing</em> X.</p>
+
+<h3 id="key-concepts">Key Concepts</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Concept</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Confounder</td>
+      <td>Causes both X and Y</td>
+      <td>Wealth → ANC visits AND delivery location</td>
+    </tr>
+    <tr>
+      <td>Mediator</td>
+      <td>On causal path X→M→Y</td>
+      <td>ANC → knowledge → SBA</td>
+    </tr>
+    <tr>
+      <td>Collider</td>
+      <td>Caused by both X and Y</td>
+      <td>Conditioning on collider opens non-causal path</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">dagitty</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">ggdag</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># DAG for SBA research</span><span class="w">
+</span><span class="n">dag</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">dagitty</span><span class="p">(</span><span class="s1">'dag {
+  Wealth -&gt; ANC_visits
+  Wealth -&gt; SBA
+  ANC_visits -&gt; SBA
+  Education -&gt; Wealth
+  Education -&gt; SBA
+  Rural -&gt; ANC_visits
+  Rural -&gt; SBA
+}'</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Find minimal adjustment set for ANC -&gt; SBA</span><span class="w">
+</span><span class="n">adjustmentSets</span><span class="p">(</span><span class="n">dag</span><span class="p">,</span><span class="w"> </span><span class="n">exposure</span><span class="o">=</span><span class="s2">"ANC_visits"</span><span class="p">,</span><span class="w"> </span><span class="n">outcome</span><span class="o">=</span><span class="s2">"SBA"</span><span class="p">)</span><span class="w">
+</span><span class="n">ggdag</span><span class="p">(</span><span class="n">dag</span><span class="p">,</span><span class="w"> </span><span class="n">layout</span><span class="o">=</span><span class="s2">"circle"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">theme_dag</span><span class="p">()</span><span class="w">
+</span></code></pre></div></div>
+
 <hr />
+<p><em><a href="/posts/2026/01/statistics-ml-index/">Series Index</a> | Post #99/100 | <a href="/">Md Salek Miah</a> | <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></em></p>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="time-series" /><category term="survival-analysis" /><category term="causal-inference" /><category term="experimentation" /><summary type="html"><![CDATA[Causal Inference: DAGs, Do-Calculus]]></summary></entry><entry><title type="html">Statistics for ML #57 — Multicollinearity &amp;amp; VIF</title><link href="https://muhammadsalek.github.io/posts/2026/02/multicollinearity/" rel="alternate" type="text/html" title="Statistics for ML #57 — Multicollinearity &amp;amp; VIF" /><published>2026-03-28T00:00:00+06:00</published><updated>2026-03-28T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2026/02/multicollinearity</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2026/02/multicollinearity/"><![CDATA[<h2 id="multicollinearity--vif">Multicollinearity &amp; VIF</h2>
 
-<p><em>The combination of ML predictions + spatial visualization is now a standard part of our research pipeline. If you are working on similar problems and want to collaborate, reach out: <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></em></p>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="spatial analysis" /><category term="maternal health" /><category term="GIS" /><category term="epidemiology" /><category term="Bangladesh" /><category term="Nepal" /><summary type="html"><![CDATA[Numbers in a regression table tell you that an association exists. A map tells you where it exists — and where it is worst. In maternal health research across South Asia and Sub-Saharan Africa, this geographic dimension is not just interesting; it is essential for policy.]]></summary></entry><entry><title type="html">Machine Learning in Public Health: Why Explainability Matters</title><link href="https://muhammadsalek.github.io/posts/2025/12/ml-public-health-explainability/" rel="alternate" type="text/html" title="Machine Learning in Public Health: Why Explainability Matters" /><published>2025-12-01T00:00:00+06:00</published><updated>2025-12-01T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2025/12/ml-public-health</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2025/12/ml-public-health-explainability/"><![CDATA[<p>In recent years, machine learning (ML) has transformed how researchers analyze complex health data. From predicting skilled birth attendance to classifying air quality, algorithms like XGBoost and Random Forest now routinely outperform traditional statistical models. But in public health, <strong>accuracy alone is not enough</strong> — we need to understand <em>why</em> a model makes a prediction.</p>
+<p>Post <strong>#57</strong> of 100 in the <em>Statistics for ML</em> series by <a href="/">Md Salek Miah</a> — Statistician, SUST Bangladesh.</p>
 
-<h2 id="the-challenge-black-box-models-in-health-policy">The Challenge: Black-Box Models in Health Policy</h2>
+<h3 id="what-you-will-learn">What You Will Learn</h3>
 
-<p>When a model predicts that a woman in rural Bangladesh is at high risk of delivering without skilled attendance, policymakers need to know which factors drove that prediction. Was it lack of antenatal care visits? Geographic remoteness? Low education? Without this understanding, interventions cannot be targeted effectively.</p>
-
-<p>This is where <strong>Explainable AI (XAI)</strong> becomes critical.</p>
-
-<h2 id="shap-values-making-ml-transparent">SHAP Values: Making ML Transparent</h2>
-
-<p>SHAP (SHapley Additive exPlanations) values assign each feature a contribution score for a specific prediction. In our studies on skilled birth attendance across Bangladesh, Nepal, Zambia, and Burkina Faso, SHAP analysis consistently revealed:</p>
-
-<ul>
-  <li><strong>Antenatal care visits</strong> — the single most important predictor across all countries</li>
-  <li><strong>Wealth index</strong> — strong positive effect, but with significant spatial heterogeneity</li>
-  <li><strong>Education level</strong> — non-linear effects, with diminishing returns at higher levels</li>
-  <li><strong>Place of residence</strong> — rural–urban disparity remained even after adjusting for other factors</li>
-</ul>
-
-<h2 id="handling-imbalanced-dhs-survey-data">Handling Imbalanced DHS Survey Data</h2>
-
-<p>Demographic and Health Survey (DHS) data presents a unique challenge: outcome classes are often severely imbalanced. For example, in Burkina Faso, only ~67% of deliveries occurred with skilled attendance, and simple models trained on raw data systematically underpredict the minority class.</p>
-
-<p>Our approach uses <strong>SMOTE (Synthetic Minority Over-sampling Technique)</strong> combined with survey-weighted sampling to address this, followed by threshold optimization on the validation set using the F1-score and ROC-AUC.</p>
-
-<h2 id="key-takeaway">Key Takeaway</h2>
-
-<p>The most powerful ML model is useless if it cannot inform policy. In all our manuscripts, we pair predictive modeling with:</p>
+<p>The <strong>Multicollinearity &amp; VIF</strong> is one of the core building blocks of quantitative research. This post covers:</p>
 
 <ol>
-  <li><strong>SHAP global importance plots</strong> for feature ranking</li>
-  <li><strong>SHAP dependence plots</strong> for interaction effects</li>
-  <li><strong>Choropleth maps</strong> for spatial inequality visualization</li>
-  <li><strong>Stratified analyses</strong> by rural/urban, wealth quintile, and education level</li>
+  <li><strong>Mathematical definition</strong> — precise and complete</li>
+  <li><strong>Intuitive explanation</strong> — what it means in plain language</li>
+  <li><strong>Public health application</strong> — real examples from DHS survey research</li>
+  <li><strong>Python implementation</strong> — ready-to-run code</li>
+  <li><strong>R implementation</strong> — for epidemiologists and survey analysts</li>
+  <li><strong>ML connection</strong> — how this concept appears in modern algorithms</li>
 </ol>
 
-<p>This combination transforms a predictive model into an <strong>actionable policy tool</strong>.</p>
+<h3 id="core-mathematics">Core Mathematics</h3>
+
+<p>The Multicollinearity &amp; VIF formalises how we model relationships between variables and make predictions.</p>
+
+<h3 id="python-code">Python Code</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="c1"># Multicollinearity &amp; VIF — implementation example
+# Full code available at: github.com/muhammadsalek
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Post #57: Multicollinearity &amp; VIF"</span><span class="p">)</span>
+
+<span class="c1"># Example: Load DHS-style data
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s">'anc_visits'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">poisson</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'birth_weight'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">3100</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'sba'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.67</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'wealth_q'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'rural'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1"># Apply Multicollinearity &amp; VIF concepts here
+</span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">describe</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h3 id="r-code">R Code</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">survey</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">broom</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Multicollinearity &amp; VIF in R</span><span class="w">
+</span><span class="c1"># Designed for DHS complex survey analysis</span><span class="w">
+
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"Statistics for ML #57: Multicollinearity &amp; VIF\n"</span><span class="p">)</span><span class="w">
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"By: Md Salek Miah | SUST | saleksta@gmail.com\n"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Example with survey design</span><span class="w">
+</span><span class="c1"># dhs_design &lt;- svydesign(id=~psu, strata=~strata,</span><span class="w">
+</span><span class="c1">#                          weights=~weight, data=dhs_data)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="connection-to-my-research">Connection to My Research</h3>
+
+<p>In my published work on maternal health and mental health outcomes across LMICs, Multicollinearity &amp; VIF appears in:</p>
+
+<ul>
+  <li>Model specification for binary health outcomes (SBA, stunting, IPV)</li>
+  <li>Spatial inequality analysis across districts and provinces</li>
+  <li>Machine learning pipeline design (XGBoost, Random Forest with SHAP)</li>
+  <li>Survey-weighted inference using complex DHS sampling designs</li>
+</ul>
+
+<h3 id="key-takeaways">Key Takeaways</h3>
+
+<ul>
+  <li>✅ Understand the mathematical foundation</li>
+  <li>✅ Know when to apply this technique vs alternatives</li>
+  <li>✅ Implement correctly in Python and R</li>
+  <li>✅ Interpret results in context of public health research</li>
+  <li>✅ Connect to ML model design decisions</li>
+</ul>
 
 <hr />
 
-<p><em>For questions or collaboration, contact: <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></em><br />
-<em>Related publications: See <a href="/publications/">Publications page</a></em></p>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="machine learning" /><category term="public health" /><category term="explainable AI" /><category term="SHAP" /><category term="epidemiology" /><summary type="html"><![CDATA[In recent years, machine learning (ML) has transformed how researchers analyze complex health data. From predicting skilled birth attendance to classifying air quality, algorithms like XGBoost and Random Forest now routinely outperform traditional statistical models. But in public health, accuracy alone is not enough — we need to understand why a model makes a prediction.]]></summary></entry><entry><title type="html">Blog Post number 4</title><link href="https://muhammadsalek.github.io/posts/2012/08/blog-post-4/" rel="alternate" type="text/html" title="Blog Post number 4" /><published>2015-08-14T00:00:00+06:00</published><updated>2015-08-14T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2012/08/blog-post-4</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2012/08/blog-post-4/"><![CDATA[<p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+<table>
+  <tbody>
+    <tr>
+      <td>*<a href="#">← Previous post</a></td>
+      <td><a href="/posts/2026/01/statistics-ml-index/">Series index</a></td>
+      <td><a href="#">Next post →</a>*</td>
+    </tr>
+    <tr>
+      <td>*Questions? <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></td>
+      <td><a href="https://www.researchgate.net/profile/Md-Miah-142">ResearchGate</a>*</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="statistics" /><category term="inference" /><category term="regression" /><category term="machine-learning" /><summary type="html"><![CDATA[Multicollinearity &amp; VIF]]></summary></entry><entry><title type="html">Statistics for ML #56 — Residual Analysis &amp;amp; Diagnostics</title><link href="https://muhammadsalek.github.io/posts/2026/02/residual-diagnostics/" rel="alternate" type="text/html" title="Statistics for ML #56 — Residual Analysis &amp;amp; Diagnostics" /><published>2026-03-27T00:00:00+06:00</published><updated>2026-03-27T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2026/02/residual-diagnostics</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2026/02/residual-diagnostics/"><![CDATA[<h2 id="residual-analysis--diagnostics">Residual Analysis &amp; Diagnostics</h2>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<p>Post <strong>#56</strong> of 100 in the <em>Statistics for ML</em> series by <a href="/">Md Salek Miah</a> — Statistician, SUST Bangladesh.</p>
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+<h3 id="what-you-will-learn">What You Will Learn</h3>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.]]></summary></entry><entry><title type="html">Blog Post number 3</title><link href="https://muhammadsalek.github.io/posts/2014/08/blog-post-3/" rel="alternate" type="text/html" title="Blog Post number 3" /><published>2014-08-14T00:00:00+06:00</published><updated>2014-08-14T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2014/08/blog-post-3</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2014/08/blog-post-3/"><![CDATA[<p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+<p>The <strong>Residual Analysis &amp; Diagnostics</strong> is one of the core building blocks of quantitative research. This post covers:</p>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<ol>
+  <li><strong>Mathematical definition</strong> — precise and complete</li>
+  <li><strong>Intuitive explanation</strong> — what it means in plain language</li>
+  <li><strong>Public health application</strong> — real examples from DHS survey research</li>
+  <li><strong>Python implementation</strong> — ready-to-run code</li>
+  <li><strong>R implementation</strong> — for epidemiologists and survey analysts</li>
+  <li><strong>ML connection</strong> — how this concept appears in modern algorithms</li>
+</ol>
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+<h3 id="core-mathematics">Core Mathematics</h3>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.]]></summary></entry><entry><title type="html">Blog Post number 2</title><link href="https://muhammadsalek.github.io/posts/2013/08/blog-post-2/" rel="alternate" type="text/html" title="Blog Post number 2" /><published>2013-08-14T00:00:00+06:00</published><updated>2013-08-14T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2013/08/blog-post-2</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2013/08/blog-post-2/"><![CDATA[<p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+<p>The Residual Analysis &amp; Diagnostics formalises how we model relationships between variables and make predictions.</p>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<h3 id="python-code">Python Code</h3>
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.]]></summary></entry><entry><title type="html">Blog Post number 1</title><link href="https://muhammadsalek.github.io/posts/2012/08/blog-post-1/" rel="alternate" type="text/html" title="Blog Post number 1" /><published>2012-08-14T00:00:00+06:00</published><updated>2012-08-14T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2012/08/blog-post-1</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2012/08/blog-post-1/"><![CDATA[<p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+<span class="c1"># Residual Analysis &amp; Diagnostics — implementation example
+# Full code available at: github.com/muhammadsalek
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Post #56: Residual Analysis &amp; Diagnostics"</span><span class="p">)</span>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<span class="c1"># Example: Load DHS-style data
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s">'anc_visits'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">poisson</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'birth_weight'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">3100</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'sba'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.67</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'wealth_q'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'rural'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">})</span>
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+<span class="c1"># Apply Residual Analysis &amp; Diagnostics concepts here
+</span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">describe</span><span class="p">())</span>
+</code></pre></div></div>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.]]></summary></entry></feed>
+<h3 id="r-code">R Code</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">survey</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">broom</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Residual Analysis &amp; Diagnostics in R</span><span class="w">
+</span><span class="c1"># Designed for DHS complex survey analysis</span><span class="w">
+
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"Statistics for ML #56: Residual Analysis &amp; Diagnostics\n"</span><span class="p">)</span><span class="w">
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"By: Md Salek Miah | SUST | saleksta@gmail.com\n"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Example with survey design</span><span class="w">
+</span><span class="c1"># dhs_design &lt;- svydesign(id=~psu, strata=~strata,</span><span class="w">
+</span><span class="c1">#                          weights=~weight, data=dhs_data)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="connection-to-my-research">Connection to My Research</h3>
+
+<p>In my published work on maternal health and mental health outcomes across LMICs, Residual Analysis &amp; Diagnostics appears in:</p>
+
+<ul>
+  <li>Model specification for binary health outcomes (SBA, stunting, IPV)</li>
+  <li>Spatial inequality analysis across districts and provinces</li>
+  <li>Machine learning pipeline design (XGBoost, Random Forest with SHAP)</li>
+  <li>Survey-weighted inference using complex DHS sampling designs</li>
+</ul>
+
+<h3 id="key-takeaways">Key Takeaways</h3>
+
+<ul>
+  <li>✅ Understand the mathematical foundation</li>
+  <li>✅ Know when to apply this technique vs alternatives</li>
+  <li>✅ Implement correctly in Python and R</li>
+  <li>✅ Interpret results in context of public health research</li>
+  <li>✅ Connect to ML model design decisions</li>
+</ul>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>*<a href="#">← Previous post</a></td>
+      <td><a href="/posts/2026/01/statistics-ml-index/">Series index</a></td>
+      <td><a href="#">Next post →</a>*</td>
+    </tr>
+    <tr>
+      <td>*Questions? <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></td>
+      <td><a href="https://www.researchgate.net/profile/Md-Miah-142">ResearchGate</a>*</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="statistics" /><category term="inference" /><category term="regression" /><category term="machine-learning" /><summary type="html"><![CDATA[Residual Analysis &amp; Diagnostics]]></summary></entry><entry><title type="html">Statistics for ML #55 — R-squared &amp;amp; Adjusted R-squared</title><link href="https://muhammadsalek.github.io/posts/2026/02/r-squared/" rel="alternate" type="text/html" title="Statistics for ML #55 — R-squared &amp;amp; Adjusted R-squared" /><published>2026-03-26T00:00:00+06:00</published><updated>2026-03-26T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2026/02/r-squared</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2026/02/r-squared/"><![CDATA[<h2 id="r-squared--adjusted-r-squared">R-squared &amp; Adjusted R-squared</h2>
+
+<p>Post <strong>#55</strong> of 100 in the <em>Statistics for ML</em> series by <a href="/">Md Salek Miah</a> — Statistician, SUST Bangladesh.</p>
+
+<h3 id="what-you-will-learn">What You Will Learn</h3>
+
+<p>The <strong>R-squared &amp; Adjusted R-squared</strong> is one of the core building blocks of quantitative research. This post covers:</p>
+
+<ol>
+  <li><strong>Mathematical definition</strong> — precise and complete</li>
+  <li><strong>Intuitive explanation</strong> — what it means in plain language</li>
+  <li><strong>Public health application</strong> — real examples from DHS survey research</li>
+  <li><strong>Python implementation</strong> — ready-to-run code</li>
+  <li><strong>R implementation</strong> — for epidemiologists and survey analysts</li>
+  <li><strong>ML connection</strong> — how this concept appears in modern algorithms</li>
+</ol>
+
+<h3 id="core-mathematics">Core Mathematics</h3>
+
+<p>The R-squared &amp; Adjusted R-squared formalises how we model relationships between variables and make predictions.</p>
+
+<h3 id="python-code">Python Code</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="c1"># R-squared &amp; Adjusted R-squared — implementation example
+# Full code available at: github.com/muhammadsalek
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Post #55: R-squared &amp; Adjusted R-squared"</span><span class="p">)</span>
+
+<span class="c1"># Example: Load DHS-style data
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s">'anc_visits'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">poisson</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'birth_weight'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">3100</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'sba'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.67</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'wealth_q'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'rural'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1"># Apply R-squared &amp; Adjusted R-squared concepts here
+</span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">describe</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h3 id="r-code">R Code</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">survey</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">broom</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># R-squared &amp; Adjusted R-squared in R</span><span class="w">
+</span><span class="c1"># Designed for DHS complex survey analysis</span><span class="w">
+
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"Statistics for ML #55: R-squared &amp; Adjusted R-squared\n"</span><span class="p">)</span><span class="w">
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"By: Md Salek Miah | SUST | saleksta@gmail.com\n"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Example with survey design</span><span class="w">
+</span><span class="c1"># dhs_design &lt;- svydesign(id=~psu, strata=~strata,</span><span class="w">
+</span><span class="c1">#                          weights=~weight, data=dhs_data)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="connection-to-my-research">Connection to My Research</h3>
+
+<p>In my published work on maternal health and mental health outcomes across LMICs, R-squared &amp; Adjusted R-squared appears in:</p>
+
+<ul>
+  <li>Model specification for binary health outcomes (SBA, stunting, IPV)</li>
+  <li>Spatial inequality analysis across districts and provinces</li>
+  <li>Machine learning pipeline design (XGBoost, Random Forest with SHAP)</li>
+  <li>Survey-weighted inference using complex DHS sampling designs</li>
+</ul>
+
+<h3 id="key-takeaways">Key Takeaways</h3>
+
+<ul>
+  <li>✅ Understand the mathematical foundation</li>
+  <li>✅ Know when to apply this technique vs alternatives</li>
+  <li>✅ Implement correctly in Python and R</li>
+  <li>✅ Interpret results in context of public health research</li>
+  <li>✅ Connect to ML model design decisions</li>
+</ul>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>*<a href="#">← Previous post</a></td>
+      <td><a href="/posts/2026/01/statistics-ml-index/">Series index</a></td>
+      <td><a href="#">Next post →</a>*</td>
+    </tr>
+    <tr>
+      <td>*Questions? <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></td>
+      <td><a href="https://www.researchgate.net/profile/Md-Miah-142">ResearchGate</a>*</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="statistics" /><category term="inference" /><category term="regression" /><category term="machine-learning" /><summary type="html"><![CDATA[R-squared &amp; Adjusted R-squared]]></summary></entry><entry><title type="html">Statistics for ML #54 — Gauss-Markov Theorem &amp;amp; BLUE</title><link href="https://muhammadsalek.github.io/posts/2026/02/gauss-markov/" rel="alternate" type="text/html" title="Statistics for ML #54 — Gauss-Markov Theorem &amp;amp; BLUE" /><published>2026-03-25T00:00:00+06:00</published><updated>2026-03-25T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2026/02/gauss-markov</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2026/02/gauss-markov/"><![CDATA[<h2 id="gauss-markov-theorem--blue">Gauss-Markov Theorem &amp; BLUE</h2>
+
+<p>Post <strong>#54</strong> of 100 in the <em>Statistics for ML</em> series by <a href="/">Md Salek Miah</a> — Statistician, SUST Bangladesh.</p>
+
+<h3 id="what-you-will-learn">What You Will Learn</h3>
+
+<p>The <strong>Gauss-Markov Theorem &amp; BLUE</strong> is one of the core building blocks of quantitative research. This post covers:</p>
+
+<ol>
+  <li><strong>Mathematical definition</strong> — precise and complete</li>
+  <li><strong>Intuitive explanation</strong> — what it means in plain language</li>
+  <li><strong>Public health application</strong> — real examples from DHS survey research</li>
+  <li><strong>Python implementation</strong> — ready-to-run code</li>
+  <li><strong>R implementation</strong> — for epidemiologists and survey analysts</li>
+  <li><strong>ML connection</strong> — how this concept appears in modern algorithms</li>
+</ol>
+
+<h3 id="core-mathematics">Core Mathematics</h3>
+
+<p>The Gauss-Markov Theorem &amp; BLUE formalises how we model relationships between variables and make predictions.</p>
+
+<h3 id="python-code">Python Code</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="c1"># Gauss-Markov Theorem &amp; BLUE — implementation example
+# Full code available at: github.com/muhammadsalek
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Post #54: Gauss-Markov Theorem &amp; BLUE"</span><span class="p">)</span>
+
+<span class="c1"># Example: Load DHS-style data
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s">'anc_visits'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">poisson</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'birth_weight'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">3100</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'sba'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.67</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'wealth_q'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'rural'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1"># Apply Gauss-Markov Theorem &amp; BLUE concepts here
+</span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">describe</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h3 id="r-code">R Code</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">survey</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">broom</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Gauss-Markov Theorem &amp; BLUE in R</span><span class="w">
+</span><span class="c1"># Designed for DHS complex survey analysis</span><span class="w">
+
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"Statistics for ML #54: Gauss-Markov Theorem &amp; BLUE\n"</span><span class="p">)</span><span class="w">
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"By: Md Salek Miah | SUST | saleksta@gmail.com\n"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Example with survey design</span><span class="w">
+</span><span class="c1"># dhs_design &lt;- svydesign(id=~psu, strata=~strata,</span><span class="w">
+</span><span class="c1">#                          weights=~weight, data=dhs_data)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="connection-to-my-research">Connection to My Research</h3>
+
+<p>In my published work on maternal health and mental health outcomes across LMICs, Gauss-Markov Theorem &amp; BLUE appears in:</p>
+
+<ul>
+  <li>Model specification for binary health outcomes (SBA, stunting, IPV)</li>
+  <li>Spatial inequality analysis across districts and provinces</li>
+  <li>Machine learning pipeline design (XGBoost, Random Forest with SHAP)</li>
+  <li>Survey-weighted inference using complex DHS sampling designs</li>
+</ul>
+
+<h3 id="key-takeaways">Key Takeaways</h3>
+
+<ul>
+  <li>✅ Understand the mathematical foundation</li>
+  <li>✅ Know when to apply this technique vs alternatives</li>
+  <li>✅ Implement correctly in Python and R</li>
+  <li>✅ Interpret results in context of public health research</li>
+  <li>✅ Connect to ML model design decisions</li>
+</ul>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>*<a href="#">← Previous post</a></td>
+      <td><a href="/posts/2026/01/statistics-ml-index/">Series index</a></td>
+      <td><a href="#">Next post →</a>*</td>
+    </tr>
+    <tr>
+      <td>*Questions? <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></td>
+      <td><a href="https://www.researchgate.net/profile/Md-Miah-142">ResearchGate</a>*</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="statistics" /><category term="inference" /><category term="regression" /><category term="machine-learning" /><summary type="html"><![CDATA[Gauss-Markov Theorem &amp; BLUE]]></summary></entry><entry><title type="html">Statistics for ML #53 — OLS Estimation</title><link href="https://muhammadsalek.github.io/posts/2026/02/ols/" rel="alternate" type="text/html" title="Statistics for ML #53 — OLS Estimation" /><published>2026-03-24T00:00:00+06:00</published><updated>2026-03-24T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2026/02/ols</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2026/02/ols/"><![CDATA[<h2 id="ols-estimation">OLS Estimation</h2>
+
+<p>Post <strong>#53</strong> of 100 in the <em>Statistics for ML</em> series by <a href="/">Md Salek Miah</a> — Statistician, SUST Bangladesh.</p>
+
+<h3 id="what-you-will-learn">What You Will Learn</h3>
+
+<p>The <strong>OLS Estimation</strong> is one of the core building blocks of quantitative research. This post covers:</p>
+
+<ol>
+  <li><strong>Mathematical definition</strong> — precise and complete</li>
+  <li><strong>Intuitive explanation</strong> — what it means in plain language</li>
+  <li><strong>Public health application</strong> — real examples from DHS survey research</li>
+  <li><strong>Python implementation</strong> — ready-to-run code</li>
+  <li><strong>R implementation</strong> — for epidemiologists and survey analysts</li>
+  <li><strong>ML connection</strong> — how this concept appears in modern algorithms</li>
+</ol>
+
+<h3 id="core-mathematics">Core Mathematics</h3>
+
+<p>The OLS Estimation formalises how we model relationships between variables and make predictions.</p>
+
+<h3 id="python-code">Python Code</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="c1"># OLS Estimation — implementation example
+# Full code available at: github.com/muhammadsalek
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Post #53: OLS Estimation"</span><span class="p">)</span>
+
+<span class="c1"># Example: Load DHS-style data
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s">'anc_visits'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">poisson</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'birth_weight'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">3100</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'sba'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.67</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'wealth_q'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'rural'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1"># Apply OLS Estimation concepts here
+</span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">describe</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h3 id="r-code">R Code</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">survey</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">broom</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># OLS Estimation in R</span><span class="w">
+</span><span class="c1"># Designed for DHS complex survey analysis</span><span class="w">
+
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"Statistics for ML #53: OLS Estimation\n"</span><span class="p">)</span><span class="w">
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"By: Md Salek Miah | SUST | saleksta@gmail.com\n"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Example with survey design</span><span class="w">
+</span><span class="c1"># dhs_design &lt;- svydesign(id=~psu, strata=~strata,</span><span class="w">
+</span><span class="c1">#                          weights=~weight, data=dhs_data)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="connection-to-my-research">Connection to My Research</h3>
+
+<p>In my published work on maternal health and mental health outcomes across LMICs, OLS Estimation appears in:</p>
+
+<ul>
+  <li>Model specification for binary health outcomes (SBA, stunting, IPV)</li>
+  <li>Spatial inequality analysis across districts and provinces</li>
+  <li>Machine learning pipeline design (XGBoost, Random Forest with SHAP)</li>
+  <li>Survey-weighted inference using complex DHS sampling designs</li>
+</ul>
+
+<h3 id="key-takeaways">Key Takeaways</h3>
+
+<ul>
+  <li>✅ Understand the mathematical foundation</li>
+  <li>✅ Know when to apply this technique vs alternatives</li>
+  <li>✅ Implement correctly in Python and R</li>
+  <li>✅ Interpret results in context of public health research</li>
+  <li>✅ Connect to ML model design decisions</li>
+</ul>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>*<a href="#">← Previous post</a></td>
+      <td><a href="/posts/2026/01/statistics-ml-index/">Series index</a></td>
+      <td><a href="#">Next post →</a>*</td>
+    </tr>
+    <tr>
+      <td>*Questions? <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></td>
+      <td><a href="https://www.researchgate.net/profile/Md-Miah-142">ResearchGate</a>*</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="statistics" /><category term="inference" /><category term="regression" /><category term="machine-learning" /><summary type="html"><![CDATA[OLS Estimation]]></summary></entry><entry><title type="html">Statistics for ML #52 — Multiple Linear Regression</title><link href="https://muhammadsalek.github.io/posts/2026/02/multiple-regression/" rel="alternate" type="text/html" title="Statistics for ML #52 — Multiple Linear Regression" /><published>2026-03-23T00:00:00+06:00</published><updated>2026-03-23T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2026/02/multiple-regression</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2026/02/multiple-regression/"><![CDATA[<h2 id="multiple-linear-regression">Multiple Linear Regression</h2>
+
+<p>Post <strong>#52</strong> of 100 in the <em>Statistics for ML</em> series by <a href="/">Md Salek Miah</a> — Statistician, SUST Bangladesh.</p>
+
+<h3 id="what-you-will-learn">What You Will Learn</h3>
+
+<p>The <strong>Multiple Linear Regression</strong> is one of the core building blocks of quantitative research. This post covers:</p>
+
+<ol>
+  <li><strong>Mathematical definition</strong> — precise and complete</li>
+  <li><strong>Intuitive explanation</strong> — what it means in plain language</li>
+  <li><strong>Public health application</strong> — real examples from DHS survey research</li>
+  <li><strong>Python implementation</strong> — ready-to-run code</li>
+  <li><strong>R implementation</strong> — for epidemiologists and survey analysts</li>
+  <li><strong>ML connection</strong> — how this concept appears in modern algorithms</li>
+</ol>
+
+<h3 id="core-mathematics">Core Mathematics</h3>
+
+<p>The Multiple Linear Regression formalises how we model relationships between variables and make predictions.</p>
+
+<h3 id="python-code">Python Code</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="c1"># Multiple Linear Regression — implementation example
+# Full code available at: github.com/muhammadsalek
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Post #52: Multiple Linear Regression"</span><span class="p">)</span>
+
+<span class="c1"># Example: Load DHS-style data
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s">'anc_visits'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">poisson</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'birth_weight'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">3100</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'sba'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.67</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'wealth_q'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'rural'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1"># Apply Multiple Linear Regression concepts here
+</span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">describe</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h3 id="r-code">R Code</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">survey</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">broom</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Multiple Linear Regression in R</span><span class="w">
+</span><span class="c1"># Designed for DHS complex survey analysis</span><span class="w">
+
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"Statistics for ML #52: Multiple Linear Regression\n"</span><span class="p">)</span><span class="w">
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"By: Md Salek Miah | SUST | saleksta@gmail.com\n"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Example with survey design</span><span class="w">
+</span><span class="c1"># dhs_design &lt;- svydesign(id=~psu, strata=~strata,</span><span class="w">
+</span><span class="c1">#                          weights=~weight, data=dhs_data)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="connection-to-my-research">Connection to My Research</h3>
+
+<p>In my published work on maternal health and mental health outcomes across LMICs, Multiple Linear Regression appears in:</p>
+
+<ul>
+  <li>Model specification for binary health outcomes (SBA, stunting, IPV)</li>
+  <li>Spatial inequality analysis across districts and provinces</li>
+  <li>Machine learning pipeline design (XGBoost, Random Forest with SHAP)</li>
+  <li>Survey-weighted inference using complex DHS sampling designs</li>
+</ul>
+
+<h3 id="key-takeaways">Key Takeaways</h3>
+
+<ul>
+  <li>✅ Understand the mathematical foundation</li>
+  <li>✅ Know when to apply this technique vs alternatives</li>
+  <li>✅ Implement correctly in Python and R</li>
+  <li>✅ Interpret results in context of public health research</li>
+  <li>✅ Connect to ML model design decisions</li>
+</ul>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>*<a href="#">← Previous post</a></td>
+      <td><a href="/posts/2026/01/statistics-ml-index/">Series index</a></td>
+      <td><a href="#">Next post →</a>*</td>
+    </tr>
+    <tr>
+      <td>*Questions? <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></td>
+      <td><a href="https://www.researchgate.net/profile/Md-Miah-142">ResearchGate</a>*</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="statistics" /><category term="inference" /><category term="regression" /><category term="machine-learning" /><summary type="html"><![CDATA[Multiple Linear Regression]]></summary></entry><entry><title type="html">Statistics for ML #51 — Simple Linear Regression</title><link href="https://muhammadsalek.github.io/posts/2026/02/simple-linear-regression/" rel="alternate" type="text/html" title="Statistics for ML #51 — Simple Linear Regression" /><published>2026-03-22T00:00:00+06:00</published><updated>2026-03-22T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2026/02/simple-linear-regression</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2026/02/simple-linear-regression/"><![CDATA[<h2 id="simple-linear-regression">Simple Linear Regression</h2>
+
+<p>Post <strong>#51</strong> of 100 in the <em>Statistics for ML</em> series by <a href="/">Md Salek Miah</a> — Statistician, SUST Bangladesh.</p>
+
+<h3 id="what-you-will-learn">What You Will Learn</h3>
+
+<p>The <strong>Simple Linear Regression</strong> is one of the core building blocks of quantitative research. This post covers:</p>
+
+<ol>
+  <li><strong>Mathematical definition</strong> — precise and complete</li>
+  <li><strong>Intuitive explanation</strong> — what it means in plain language</li>
+  <li><strong>Public health application</strong> — real examples from DHS survey research</li>
+  <li><strong>Python implementation</strong> — ready-to-run code</li>
+  <li><strong>R implementation</strong> — for epidemiologists and survey analysts</li>
+  <li><strong>ML connection</strong> — how this concept appears in modern algorithms</li>
+</ol>
+
+<h3 id="core-mathematics">Core Mathematics</h3>
+
+<p>The Simple Linear Regression formalises how we model relationships between variables and make predictions.</p>
+
+<h3 id="python-code">Python Code</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="c1"># Simple Linear Regression — implementation example
+# Full code available at: github.com/muhammadsalek
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Post #51: Simple Linear Regression"</span><span class="p">)</span>
+
+<span class="c1"># Example: Load DHS-style data
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s">'anc_visits'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">poisson</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'birth_weight'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">3100</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'sba'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.67</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'wealth_q'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'rural'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1"># Apply Simple Linear Regression concepts here
+</span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">describe</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h3 id="r-code">R Code</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">survey</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">broom</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Simple Linear Regression in R</span><span class="w">
+</span><span class="c1"># Designed for DHS complex survey analysis</span><span class="w">
+
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"Statistics for ML #51: Simple Linear Regression\n"</span><span class="p">)</span><span class="w">
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"By: Md Salek Miah | SUST | saleksta@gmail.com\n"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Example with survey design</span><span class="w">
+</span><span class="c1"># dhs_design &lt;- svydesign(id=~psu, strata=~strata,</span><span class="w">
+</span><span class="c1">#                          weights=~weight, data=dhs_data)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="connection-to-my-research">Connection to My Research</h3>
+
+<p>In my published work on maternal health and mental health outcomes across LMICs, Simple Linear Regression appears in:</p>
+
+<ul>
+  <li>Model specification for binary health outcomes (SBA, stunting, IPV)</li>
+  <li>Spatial inequality analysis across districts and provinces</li>
+  <li>Machine learning pipeline design (XGBoost, Random Forest with SHAP)</li>
+  <li>Survey-weighted inference using complex DHS sampling designs</li>
+</ul>
+
+<h3 id="key-takeaways">Key Takeaways</h3>
+
+<ul>
+  <li>✅ Understand the mathematical foundation</li>
+  <li>✅ Know when to apply this technique vs alternatives</li>
+  <li>✅ Implement correctly in Python and R</li>
+  <li>✅ Interpret results in context of public health research</li>
+  <li>✅ Connect to ML model design decisions</li>
+</ul>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>*<a href="#">← Previous post</a></td>
+      <td><a href="/posts/2026/01/statistics-ml-index/">Series index</a></td>
+      <td><a href="#">Next post →</a>*</td>
+    </tr>
+    <tr>
+      <td>*Questions? <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></td>
+      <td><a href="https://www.researchgate.net/profile/Md-Miah-142">ResearchGate</a>*</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="statistics" /><category term="inference" /><category term="regression" /><category term="machine-learning" /><summary type="html"><![CDATA[Simple Linear Regression]]></summary></entry><entry><title type="html">Statistics for ML #70 — Principal Component Analysis (PCA)</title><link href="https://muhammadsalek.github.io/posts/2026/02/pca/" rel="alternate" type="text/html" title="Statistics for ML #70 — Principal Component Analysis (PCA)" /><published>2026-03-13T00:00:00+06:00</published><updated>2026-03-13T00:00:00+06:00</updated><id>https://muhammadsalek.github.io/posts/2026/02/pca</id><content type="html" xml:base="https://muhammadsalek.github.io/posts/2026/02/pca/"><![CDATA[<h2 id="principal-component-analysis-pca">Principal Component Analysis (PCA)</h2>
+
+<p>Post <strong>#70</strong> of 100 in the <em>Statistics for ML</em> series by <a href="/">Md Salek Miah</a> — Statistician, SUST Bangladesh.</p>
+
+<h3 id="what-you-will-learn">What You Will Learn</h3>
+
+<p>The <strong>Principal Component Analysis (PCA)</strong> is one of the core building blocks of quantitative research. This post covers:</p>
+
+<ol>
+  <li><strong>Mathematical definition</strong> — precise and complete</li>
+  <li><strong>Intuitive explanation</strong> — what it means in plain language</li>
+  <li><strong>Public health application</strong> — real examples from DHS survey research</li>
+  <li><strong>Python implementation</strong> — ready-to-run code</li>
+  <li><strong>R implementation</strong> — for epidemiologists and survey analysts</li>
+  <li><strong>ML connection</strong> — how this concept appears in modern algorithms</li>
+</ol>
+
+<h3 id="core-mathematics">Core Mathematics</h3>
+
+<p>The Principal Component Analysis (PCA) formalises how we build and evaluate predictive machine learning models.</p>
+
+<h3 id="python-code">Python Code</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="c1"># Principal Component Analysis (PCA) — implementation example
+# Full code available at: github.com/muhammadsalek
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Post #70: Principal Component Analysis (PCA)"</span><span class="p">)</span>
+
+<span class="c1"># Example: Load DHS-style data
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s">'anc_visits'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">poisson</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'birth_weight'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">3100</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'sba'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.67</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'wealth_q'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span>
+    <span class="s">'rural'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1"># Apply Principal Component Analysis (PCA) concepts here
+</span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">describe</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h3 id="r-code">R Code</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">survey</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">broom</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Principal Component Analysis (PCA) in R</span><span class="w">
+</span><span class="c1"># Designed for DHS complex survey analysis</span><span class="w">
+
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"Statistics for ML #70: Principal Component Analysis (PCA)\n"</span><span class="p">)</span><span class="w">
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"By: Md Salek Miah | SUST | saleksta@gmail.com\n"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Example with survey design</span><span class="w">
+</span><span class="c1"># dhs_design &lt;- svydesign(id=~psu, strata=~strata,</span><span class="w">
+</span><span class="c1">#                          weights=~weight, data=dhs_data)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="connection-to-my-research">Connection to My Research</h3>
+
+<p>In my published work on maternal health and mental health outcomes across LMICs, Principal Component Analysis (PCA) appears in:</p>
+
+<ul>
+  <li>Model specification for binary health outcomes (SBA, stunting, IPV)</li>
+  <li>Spatial inequality analysis across districts and provinces</li>
+  <li>Machine learning pipeline design (XGBoost, Random Forest with SHAP)</li>
+  <li>Survey-weighted inference using complex DHS sampling designs</li>
+</ul>
+
+<h3 id="key-takeaways">Key Takeaways</h3>
+
+<ul>
+  <li>✅ Understand the mathematical foundation</li>
+  <li>✅ Know when to apply this technique vs alternatives</li>
+  <li>✅ Implement correctly in Python and R</li>
+  <li>✅ Interpret results in context of public health research</li>
+  <li>✅ Connect to ML model design decisions</li>
+</ul>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>*<a href="#">← Previous post</a></td>
+      <td><a href="/posts/2026/01/statistics-ml-index/">Series index</a></td>
+      <td><a href="#">Next post →</a>*</td>
+    </tr>
+    <tr>
+      <td>*Questions? <a href="mailto:saleksta@gmail.com">saleksta@gmail.com</a></td>
+      <td><a href="https://www.researchgate.net/profile/Md-Miah-142">ResearchGate</a>*</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Md Salek Miah</name><email>saleksta@gmail.com</email><uri>https://salek-protfolio.vercel.app/</uri></author><category term="statistics" /><category term="inference" /><category term="regression" /><category term="machine-learning" /><summary type="html"><![CDATA[Principal Component Analysis (PCA)]]></summary></entry></feed>
