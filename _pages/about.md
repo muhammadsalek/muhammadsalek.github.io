@@ -24,28 +24,28 @@ I am a **Statistician and Machine Learning Specialist** at [Shahjalal University
 
 ---
 
-## 📰 Recent Highlights
+##  Recent Highlights
 
-- ✅ **2 Published** Scopus/WoS-indexed journal articles (Springer Nature, Wiley)
-- 📤 **20+ Manuscripts Under Review** in Q1 journals (Scientific Reports, BMJ Global Health, PLOS ONE, BMC Women's Health, Global Mental Health, Archives of Women's Mental Health)
-- 🌍 **Invited Peer Reviewer** — *Cambridge Prisms: Global Mental Health* (Cambridge University Press), March 2026
-- 🏆 **Winner** — DNA Day Writing Contest, ISCB RSG Bangladesh, 2025
-- 🥈 **Runner-up** — Poster Competition, 6th Bangladesh Economics Summit, 2025 (Prize: 10,000 BDT)
-- 🎤 Presented at **5+ international conferences** including Al Farabi Congress, Türkiye (2025)
-- 🤝 **Research Collaborator** — ELITE Research Lab (Generative AI, XAI, NLP) | CSBD (Canada-affiliated) | DataKothon Research Lab
+-  **2 Published** Scopus/WoS-indexed journal articles (Springer Nature, Wiley)
+-  **Seceral Manuscripts Under Review** in Q1 journals (Scientific Reports, BMJ Global Health, PLOS ONE, BMC Women's Health, Global Mental Health, Archives of Women's Mental Health)
+-  **Invited Peer Reviewer** — *Cambridge Prisms: Global Mental Health* (Cambridge University Press), March 2026
+-  **Winner** — DNA Day Writing Contest, ISCB RSG Bangladesh, 2025
+-  **Runner-up** — Poster Competition, 6th Bangladesh Economics Summit, 2025 (Prize: 10,000 BDT)
+-  Presented at **5+ international conferences** including Al Farabi Congress, Türkiye (2025)
+-  **Research Collaborator** — ELITE Research Lab (Generative AI, XAI, NLP) | CSBD (Canada-affiliated) | DataKothon Research Lab
 
 ---
 
 ## 🎓 Education
 
-**B.Sc. (Honours) in Statistics** — Shahjalal University of Science and Technology (SUST), 2021–Present  
-*3rd Year, 2nd Semester | GPA ~3.5–4.00/4.00 in all major courses*
-
-**Relevant Courses:** Machine Learning · Epidemiological Methods · Biostatistics · Sampling Techniques · Regression Analysis · Statistical Inference · Demography · Data Science · Research Methodology
-
+**B.Sc. (Honours) in Statistics**  
+*Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh* · 2021–Present  
+- **Current Standing:** Final Year, B.Sc. in Statistics  
+- **Academic Performance:** GPA ≥ 3.75/4.00 in all major statistical courses (Probability, Regression, Statistical Inference, Sampling, Design of Experiments)  
+- **Advanced Coursework:** Machine Learning, Epidemiological Methods, Research Methodology, Data Science, Demography, Stochastic Processes
 ---
 
-## 🛠️ Technical Skills
+##  Technical Skills
 
 | Area | Tools & Technologies |
 |------|---------------------|
@@ -58,7 +58,7 @@ I am a **Statistician and Machine Learning Specialist** at [Shahjalal University
 
 ---
 
-## 🌐 Selected Projects
+##  Selected Projects
 
 - 🔗 [**AquaLens** — Water Quality Intelligence Platform (Buriganga River)](https://salek.shinyapps.io/aqualens/)
 - 🔗 [**Interactive Statistical Calculator**](https://qa8m8h-md0salek-miah.shinyapps.io/calculator/)
@@ -67,7 +67,7 @@ I am a **Statistician and Machine Learning Specialist** at [Shahjalal University
 
 ---
 
-## 📬 Contact
+##  Contact
 
 Feel free to reach out for research collaborations, manuscript discussions, or PhD opportunities:
 
